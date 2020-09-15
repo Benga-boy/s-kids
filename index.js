@@ -25,7 +25,7 @@ app.use(bodyParser.json({ limit: '50mb' }))
 
 app.use('/api', router)
 
-app.use('/*', (req, res) => res.sendfile(`${__dirname}/frontend/build/index.html`))
+app.use('/*', (req, res) => res.sendFile(`${__dirname}/frontend/build/index.html`))
 
 app.use(errorHandler)
 
