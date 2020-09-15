@@ -6,7 +6,7 @@ const app = express()
 const router = require('./config/routes')
 const errorHandler = require('./lib/errorHandler')
 const { dbURI } = require('./config/environment')
-
+const path = require('path')
 
 mongoose.connect(
   dbURI,
@@ -24,6 +24,16 @@ app.use(bodyParser.json({ limit: '50mb' }))
 app.use('/api', router)
 
 app.use(errorHandler)
+
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  // Set the static folder to use
+  app.use(express.static('frontend/build'))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+  })
+}
 
 const PORT = process.env.PORT || 8000
 
