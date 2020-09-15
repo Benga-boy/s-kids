@@ -1,4 +1,3 @@
-require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -7,6 +6,10 @@ const router = require('./config/routes')
 const errorHandler = require('./lib/errorHandler')
 const { dbURI } = require('./config/environment')
 // const path = require('path')
+
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
 
 mongoose.connect(
   dbURI,
