@@ -1,0 +1,927 @@
+// * OVERRIDE BULMA CLASSES HERE
+
+@import '~bulma/bulma.sass';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  height: auto;
+}
+
+// ! HOME PAGE
+.home{
+  margin-top: 230px;
+  width: 100%;
+  .home-section{
+    .carousel-wrapper {
+      width: 100%;
+      .home-slideshow {
+        height: 310px;
+        width: 100%;
+        img {
+          height: 380px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .offerings{
+    margin: auto;
+    width: 80%;
+    margin-top: 0;
+    .modal {
+      .modal-card {
+        header {
+          background-color: #9d65c9;
+          p {
+            color: #ffffff;
+            font-weight: bold;
+          }
+        }
+        section {
+          background-color: #fafafa;
+        }
+      }
+    }
+    article.message#box1:hover{
+        background-color: rgba(253, 253, 150, 1);
+    }
+    article.message#box2:hover{
+        background-color: rgba(104, 171, 247, 0.5);
+    }
+    article.message#box3:hover{
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    article.message#box4:hover{
+        background-color: rgba(119,221,119, 0.5);
+
+    }
+    article.message#box5:hover{
+        background-color: rgba(240, 18, 66, 0.3);
+    }
+    article.message#box6:hover{
+        background-color: rgba(87, 245, 171, 0.4);
+    }
+  }
+  .welcome {
+    background-color: #fd0054;
+    .animate__animated.animate__heartBeat {
+      --animate-duration: 3s;
+      margin-bottom: 40px;
+      font-size: 48px;
+      color: #f2f4fb;
+      font-weight: bold;
+    }
+
+    .home-subtitle {
+      width: 65%;
+      margin: auto;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  #container {
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  #monitor {
+    background: #000; 
+    position: relative;
+    border-top: 3px solid #888; 
+    margin: 5%;
+    padding: 2% 2% 4% 2%; 
+    border-radius: 10px; 
+    border-bottom-left-radius: 50% 2%; 
+    border-bottom-right-radius: 50% 2%; 
+    transition: margin-right 1s;
+  }
+  
+  #monitor:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 36%;
+    height: .5%; 
+    width: 28%;
+    background: #ddd; 
+    border-radius: 50%; 
+    box-shadow: 0 0 3px 0 white; 
+  }
+  
+  #monitorscreen {
+    position: relative;
+    background-color: #777;
+    background-size: cover; 
+    background-position: top center;
+    height: 0; 
+    padding-bottom: 56.25%; 
+    position: relative;
+    overflow: hidden;
+    .video {
+      width: 100%;
+      background-color: #ffffff;
+      video {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+  
+  
+  @media all and (min-width: 960px) {
+    #monitor {
+      -webkit-animation: tvflicker .2s infinite alternate; 
+      -moz-animation:    tvflicker .5s infinite alternate; 
+      -o-animation:      tvflicker .5s infinite alternate; 
+      animation:         tvflicker .5s infinite alternate; 
+    }
+  
+    @-webkit-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(200,235,255,0.4); }
+      100% { box-shadow: 0 0 95px 0 rgba(200,230,255,0.45); }
+    }
+    @-moz-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @-o-keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+    @keyframes tvflicker {
+      0%   { box-shadow: 0 0 100px 0 rgba(225,235,255,0.4); }
+      100% { box-shadow: 0 0 60px 0 rgba(200,220,255,0.6); }
+    }
+  }
+}
+
+// * RULER
+// .ruler::after {
+//   display: block;
+//   height: 3px;
+//   background-color: #000;
+//   content: " ";
+//   width: 150px;
+//   margin: auto;
+//   margin-top: 20px;
+//   margin-bottom: 28px;
+// }
+
+
+// ! FOOTER
+.foot {
+  background-color: #a80038;
+  margin-top: 20px;
+  height: 177px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  .footer-container {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    div .skcopyright strong {
+      color: #fddb3a;
+      text-align: center;
+      margin-left: 70px;
+    }
+    .social-links li{
+      display: inline-block;
+      margin-right: 24px;
+      font-size: 65px;
+      position: relative;
+      top: -24px;
+      left: 2px;
+      a {
+        color: #ffffff;
+      }
+      .facebook:hover,
+      .facebook:active {
+      color: #3b5998;
+      transition: color 1s;
+      }
+      .twitter:hover,
+      .twitter:active {
+      color: #55acee;
+      transition: color 1s;
+      }
+      .instagram:hover,
+      .instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
+    }
+    .social-links li :last-child {
+      margin-right: 0;
+    }
+    .policy {
+      margin-left: 20px;
+      p{
+        display: inline-block;
+        margin-right: 24px;
+        margin-bottom: 28px;
+        text-decoration: underline;
+        color: white;
+      }
+      p:last-child{
+        margin-left: 12px;
+        margin-right: 0;
+      }
+      p:hover {
+        color: #318fb5;
+        transition: color 1s;
+      }
+    }
+  }
+}
+
+// ! DIVIDER
+.divider{
+  position: relative;
+  min-width:2px;
+  max-width:2px;
+  background-color:#000;
+  display:inline-block;
+  margin:0 25px 0 25px;
+}
+
+
+// ! ABOUT
+.about {
+  margin-top: 218px;
+  .about-rene, .about-ola{
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+  .about-background .hero-body .container h1,
+  .about-background .hero-body .container h4 {
+    font-weight: bold;
+  }
+  .about-background .hero-body .container h1 {
+    font-size: 44px;
+  }
+  .about-ola {
+    margin-right: 40px;
+  }
+  .coaches {
+    text-align: center;
+  }
+  .about-content {
+    padding: 0 16px 0 10px;
+    width: 60%;
+    margin: auto;
+  }
+  .more {
+    cursor: pointer;
+    color: #0000ff;
+  }
+  .more:hover {
+    text-decoration: underline;
+    transition: text-decoration 2s;
+  }
+  .rene-modal {
+    header {
+      background-color: #ea5455;
+      p {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: #ff0000;
+      }
+    }
+    section figure {
+      width: 200px;
+      margin-bottom: 24px;
+      margin-top: 16px;
+      padding: 0 12px;
+      img {
+        border: solid 4px #000;
+      }
+    }
+    section div p {
+      padding: 0 12px;
+      width: 95%;
+    }
+    footer ul li {
+      display: inline-block;
+      font-size: 1.8em;
+      .rene-twitter:hover,
+      .rene-twitter:active {
+        color: #55acee;
+        transition: color 1s;
+      }
+      .rene-instagram:hover,
+      .rene-instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
+    }
+    footer ul li:last-child {
+      margin-left: 18px;
+    }
+    footer ul li a{
+      color: #000;
+    }
+  }
+  .ola-modal {
+    header {
+      background-color: #ea5455;
+      p {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: #ff0000;
+      }
+    }
+    section figure {
+      width: 200px;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      padding: 0 12px;
+      img {
+        border: solid 4px #000;
+      }
+    }
+    section div p {
+      padding: 0 12px;
+      width: 95%;
+    }
+    footer ul li {
+      display: inline-block;
+      font-size: 1.8em;
+      .ola-twitter:hover,
+      .ola-twitter:active {
+        color: #55acee;
+        transition: color 1s;
+      }
+      .ola-instagram:hover,
+      .ola-instagram:active {
+      color: #e95950;
+      transition: color 1s;
+      }
+    }
+    footer ul li:last-child {
+      margin-left: 18px;
+    }
+    footer ul li a{
+      color: #000;
+    }
+  }
+  .about-background  {
+    background-color: #00bcd4;
+  }
+}
+
+
+//! SCHOOL SERVICES
+.school-services{
+  margin-top: 218px;
+  width: 100%;
+  .school-services-carousel{
+    width: 50em;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    .content {
+      margin-left: 5%;
+      margin-top: 24px;
+      .enquire {
+        margin-top: 30px;
+        strong {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #000;
+        }
+      }
+    }
+    .workshops{
+      margin-left: 7%;
+      p {
+        width: 80%;
+      }
+    }
+    .school-carousel{
+      width: 75%;
+      margin-left: 60px;
+      .school-slideshow img {
+        height: 400px;
+        width: 100%;
+      }
+    }
+  }
+  .info-and-testimonial{
+  margin: 60px 30px 0 30px;
+  }
+  .school-services-info{
+    width: 100%;
+    .content {
+      margin-left: 10%;
+    }
+  }
+  .school-services-testimonial{
+    width: 80%;
+    h4{
+      margin-top: 60px;
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border: solid 4px #00bcd4;
+      background-color: #00bcd4;
+      color: #ffffff;
+      border-radius: 3px;
+    }
+  }
+  .divider {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .school-services-background {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('./assets/others/AfterSchoolClubPic1xx.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 40px;
+    .ss-text {
+      color: #ffffff;
+      width: 70%;
+      margin: auto;
+      font-weight: bold;
+    }
+  }
+  .title {
+    margin-bottom: 12px;
+    font-size: 44px;
+    color: #ffffff;
+  }
+}
+
+
+
+//* WHATS ON
+.non-event {
+  // background-color: #00bcd4;
+  .title {
+    color: #ff0000;
+    width: 60%;
+    margin: auto;
+  }
+}
+.whatson{
+  margin-top: 218px;
+  .whatson-info{
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    padding-top: 50px;
+    .whatson-event{
+      width: 70%;
+    }
+    .whatson-directions{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+      margin-right: 40px;
+    }
+  }
+}
+
+.event-new-form{
+  margin-top: 218px;
+}
+
+.no-event {
+  margin-top: 225px;
+}
+
+// ! MULTISPORTS
+.multisports{
+  margin-top: 218px;
+  .infos-and-testimonial{
+    margin: 60px 30px 0 30px;
+    }
+    .multisports-info{
+      margin-left: 20px;
+      margin-right: 0;
+      .ms-click strong {
+        text-decoration: none;
+      }
+      .ms-click strong span {
+        text-decoration: underline;
+      }
+      .multi-sport-image {
+        margin-left: 0;
+      }
+      .multi-sport-image img {
+        width: 100%;
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        width: 95%;
+        margin-bottom: 20px;
+      }
+      p strong {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000;
+      }
+      img {
+        height: 350px;
+        width: 425px;
+        margin-bottom: 12px;
+      }
+    }
+    .multisports-services-testimonial{
+      width: 85%;
+      margin-left: 0;
+      .testimonial-box{
+        margin-bottom: 40px;
+      }
+      h4{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border: solid 4px #00bcd4;
+        background-color: #00bcd4;
+        color: #ffffff;
+        border-radius: 3px;
+      }
+    }
+    .multi-sports-background {
+      background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./assets/homeCarousel/multisports-background.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 24px;
+      height: 300px;
+      opacity: 1;
+      h1 {
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 44px;
+        color: #ffffff;
+      }
+    }
+}
+
+
+// ! NAVBAR
+.navbar{
+  font-family: 'Work Sans', sans-serif;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  .nav-top{
+    display: flex;
+    justify-content: space-between;
+    .contact{
+      display: flex;
+      margin-top: 20px;
+      margin-right: 100px;
+      padding: 0 8px;
+      .email{
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        p {
+          ion-icon{
+            margin-right: 18px;
+            font-size: 68px;
+            position: relative;
+            left: 9px;
+          }
+        }
+      }
+      .phone-number{
+        display: flex;
+        align-items: center;
+        p {
+          ion-icon{
+            margin-right: 18px;
+            font-size: 68px;
+            position: relative;
+            left: 9px;
+          }
+        }
+      }
+    }
+    #sk-logo{
+      margin: 10px 0 0 40px;
+      height: 7em;
+      padding: 6px 10px;
+    }
+  }
+  hr.nav-divider{
+    margin:0;
+    width:96%;
+    margin-left: 2%;
+  }
+  .nav-bottom{
+    .menu-port{
+      position: fixed;
+      background-color: white;
+      width: 100%;
+      margin-top: 0;
+      .links{
+        display: flex;
+	      flex-direction: row;
+	      flex-wrap: nowrap;
+	      justify-content: flex-end;
+        align-items: center;
+        margin-top: 12px;
+        font-weight: bold;
+        margin-left: 15%;
+        margin-right: 3%;
+        //* Removed the is:active and Ive also commented out the bits that arent having an effect.
+        .navbar-item {
+          color: #0000ff;
+          background-color: #ffffff;
+        }
+        .navbar-item span:hover,
+        .navbar-item span:active {
+          background-color: #ea5455;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+// ! CHILD PROTECTION
+.childprotection{
+  margin-top: 218px;
+  .hero .hero-body .container .title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .hero .hero-body .container h3{
+    font-weight: bold;
+    width: 80%;
+  }
+  // * Beliefs
+  .believe{
+    margin-bottom: 20px;
+  }
+  .beliefs ul li {
+    list-style: circle;
+    text-indent: 46px;
+    width: 70%;
+    padding: 2px;
+    span {
+      margin-left: 44px;
+    }
+  }
+  .order-one{
+    margin-top: 20px;
+    ol li {
+      width: 70%;
+    }
+    ol li:last-child{
+      margin-top: 14px;
+    }
+  }
+  // * STAFFING POLICIES
+  .staffing-policies {
+    margin-top: 24px;
+    ol {
+      margin-top: 12px;
+      margin-left: 36px;
+    }
+    ol li {
+      padding: 4px;
+    }
+  }
+  // ! CONDUCTS
+  .conduct{
+    margin-top: 24px;
+    ol {
+      margin-top: 12px;
+      margin-left: 36px;
+    }
+    ol li {
+      padding: 4px;
+      ul li {
+        list-style: square;
+        margin-left: 36px;
+      }
+      ul li:first-child {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// ! PRIVACY POLICY
+.privacy {
+  margin-top: 220px;
+  .hero .hero-body .container .title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .hero .hero-body .container h3{
+    font-weight: bold;
+    width: 80%;
+  }
+  .p-statements p {
+    margin-bottom: 16px;
+    padding: 4px;
+    width: 90%;
+  }
+  .p-statements h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+  .p-statements ul li {
+    list-style: circle;
+    padding: 4px;
+    margin-left: 36px;
+  }
+}
+
+// ! EVENT
+
+
+// ! CONTACT
+.contact-us {
+  margin-top: 225px;
+  .sub-form {
+    overflow-y: hidden;
+    iframe {
+      width: 570px;
+      height: 550px;
+      padding: 16px;
+      margin-bottom: 50px;
+    }
+    .title {
+      margin-bottom: 0px;
+      margin-left: 60px;
+    }
+  }
+  .contact-form {
+    margin: 24px 24px 0 0;
+    padding: 12px 24px;
+    width: 90%;
+    background-color: #ffffff;
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
+    }
+    form div label {
+      font-weight: bold;
+    }
+    form button{
+      font-size: 16px;
+    }
+  }
+  .contact-background {
+    // background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://www.moorgateacoustics.co.uk/wp-content/uploads/2015/01/contact_1.jpg');
+    background-color: #00bcd4;
+    height: 200px;
+    .hero-body .container h1 {
+      font-weight: bold;
+      font-size: 44px;
+      margin-top: 24px;
+      text-align: center;
+    }
+  }
+}
+
+
+//! LOGIN
+.login{
+margin-top: 300px;
+}
+
+//! EVENT EDIT
+.event-edit{
+  margin-top: 200px;
+}
+
+// ! BOX CARDS
+
+.box-one:hover,
+.box-three:hover,
+.box-four:hover,
+.box-six:hover {
+  animation: headShake;
+  animation-duration: 3s;
+}
+.after-school {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://thelittlesandme.com/wp-content/uploads/2018/04/ChalkPromptsCards-8-of-7.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.after-school:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sports-coaching {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://arkpriory.org/sites/default/files/shutterstock_1396798973.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.sports-coaching:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.small-groups {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://www.cbc.ca/kidscbc2/content/contests/kids-colouring-Twenty20.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.small-groups:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.one-to-one {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://ak.picdn.net/shutterstock/videos/12246446/thumb/7.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.one-to-one:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.birthday-parties {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://media.socastsrm.com/wordpress/wp-content/blogs.dir/1050/files/2019/08/082619-1.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.birthday-parties:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.breakfast-club {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://paisleyprimaryschool.org.uk/wp-content/uploads/2015/07/o-SMILEY-BREAKFAST-facebook.jpg');
+  height: 150px;
+  background-size: cover;
+  text-align: center;
+  opacity: 0.8;
+  p {
+    margin-top: 30px;
+    color: white;
+  }
+}
+.breakfast-club:hover {
+  opacity: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,733 @@
+/* from big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+  // * HOME
+  .home {
+    .offerings {
+      .modal {
+        .modal-card {
+          width: 80%;
+          margin: auto;
+          height: 16rem;
+          header p {
+            font-size: 1.8em;
+            font-weight: bold;
+          }
+          section p {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+
+
+// * NAVBAR 
+.navbar {
+  .nav-bottom {
+    .menu-port {
+      .links {
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+// * FOOTER
+.foot {
+  height: 11.5rem;
+  .footer-container {
+    div .skcopyright strong {
+      margin-left: 1rem;
+    }
+    .policy {
+      margin-left: 2rem;
+    }
+  }
+}
+
+// * SCHOOL SERVICES
+.school-services {
+  .school-services-info {
+    width: 100%;
+  }
+}
+}
+
+/* small tablets to big tablets 768 - 1023px */
+@media only screen and (max-width: 1023px) {
+  // * NAVBAR
+.navbar {
+  .nav-top {
+    display: block;
+  }
+  .nav-bottom {
+    .menu-port {
+      .links {
+        margin-right: 0.7em;
+      }
+    }
+  }
+}
+
+// * HOME
+
+.home {
+  .welcome {
+    height: 12rem;
+    margin-bottom: 0;
+    .animate__animated .animate__bounceInUp {
+      font-size: 1.8em;
+      margin-bottom: 1rem;
+    }
+    .home-subtitle {
+      width: 85%;
+      font-size: 1em;
+    }
+  }
+  #monitorscreen {
+    .video {
+      width: 100%;
+      background-color: #ffffff;
+      video {
+        width: 57%;
+        height: auto;
+        margin-left: 21.5%;
+      }
+    }
+  }
+
+  // * MODALS 
+  .offerings {
+    .modal {
+      .modal-card {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+
+// * FOOTER 
+.foot {
+  height: 11.5rem;
+  .footer-container {
+    width: 100%;
+    .social-links li {
+      font-size: 3em;
+      margin-right: 0.4em;
+      margin-top: 0.7rem;
+    }
+    div .skcopyright strong {
+      font-size: 1.2em;
+      margin-left: 0;
+      margin-top: 10rem;
+    }
+    .policy {
+      margin-left: 2rem;
+      p {
+        font-size: 1em;
+        // display: block;
+      }
+    }
+  }
+}
+
+// * ABOUT 
+.about {
+  margin-top: 17rem;
+  .about-background .hero-body .container h1 {
+    font-size: 2.4em;
+    margin-bottom: 1rem;
+  }
+  .about-rene, .about-ola{
+    width: 50%;
+    margin: auto;
+  }
+  .coaches {
+    margin-bottom: 3rem;
+  }
+  .rene-modal, .ola-modal {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    header p {
+      font-size: 1.1em;
+    }
+    section figure {
+      width: 14rem;
+      margin-bottom: 2.2rem;
+    }
+    section div p {
+      font-size: 0.9em;
+      width: 95%;
+    }
+  }
+}
+
+
+// * MULTISPORTS
+.multisports {
+  margin-top: 16rem;
+  margin-right: 0;
+  .multi-sports-background {
+    width: 100%;
+    background-size: cover;
+    h1 {
+      font-size: 2.4em;
+      margin-top: 4rem;
+    }
+  }
+  .multisports-info {
+    h3 {
+      font-size: 1.4em;
+    }
+    p {
+      font-size: 0.9em;
+      width: 90%;
+    }
+    img {
+      width: 50%;
+      height: 18rem;
+    }
+  }
+  .multi-sport-image img {
+    width: 60%;
+    margin-left: 1rem;
+  }
+  .multisports-services-testimonial {
+    width: 60%;
+    margin-left: 1rem;
+    h4 {
+      font-size: 1.7em;
+    }
+    .testimonial-box {
+      em {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+// * SCHOOL SERVICES
+.school-services {
+  margin-top: 16rem;
+  .school-services-background {
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 0.7rem;
+    }
+    .ss-text {
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }
+  .content {
+    h3 {
+      font-size: 1.4em;
+    }
+    p, ul li {
+      font-size: 0.85em;
+      width: 90%;
+    }
+  }
+  .school-services-testimonial {
+    margin: auto;
+    h4 {
+      width: 65%;
+      font-size: 1.6em;
+    }
+    
+    article {
+      width: 65%;
+      p {
+        font-size: 0.95em;
+      }
+      em {
+        font-size: 0.8em;
+      }
+    }
+  }
+  .school-services-carousel {
+    width: 90%;
+    margin-left: 0.85rem;
+    .school-carousel {
+      width: 70%;
+      margin-left: 4.5rem;
+      // .carousel-school-services {
+      //   width: 100%;
+      // }
+    }
+    .workshops {
+      h3 {
+        font-size: 1.4em;
+      }
+      p {
+        font-size: 0.85em;
+        width: 90%;
+      }
+    }
+  }
+}
+.contact-us {
+  .title {
+    font-size: 1.6em;
+    text-align: center;
+  }
+.contact-background {
+  margin-top: 10rem;
+  .hero-body {
+    .container {
+      h1 {
+        font-size: 2em;
+        margin-top: 3.5rem;
+      }
+    }
+  }
+}
+.contact-form {
+  width: 65%;
+  margin: auto;
+  form {
+    padding: 1rem;
+    margin-top: 1rem;
+    button {
+      font-size: 0.8em;
+    }
+  }
+}
+.sub-form {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  iframe {
+    margin-left: 5rem;
+  }
+}
+}
+}
+
+/* small phones to small tablets 481 - 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* small phones 0 - 480px */
+@media only screen and (max-width: 480px) {
+  // * HOME
+  .home {
+    width: 100%;
+    margin-right: 0;
+    .home-section{
+      .carousel-wrapper {
+        width: 100%;
+        .home-slideshow {
+          height: 13rem;
+          width: 100%;
+          img {
+            height: 15rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .welcome {
+      height: 9rem;
+      .animate__animated.animate__heartBeat {
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+      }
+      .home-subtitle {
+        width: 100%;
+        font-size: 0.65em;
+      }
+    }
+    #monitorscreen {
+      .video {
+        width: 100%;
+        background-color: #ffffff;
+        video {
+          width: 55%;
+          height: auto;
+          margin-left: 22.5%;
+        }
+      }
+    }
+    .offerings {
+      width: 100%;
+      .columns .column {
+        margin: auto;
+        width: 50%;
+      }
+        .modal {
+          .modal-card {
+            width: 92%;
+            margin: auto;
+            height: 95%;
+            header {
+              background-color: #ede682;
+            }
+            header p {
+              font-size: 0.9em;
+              width: 90%;
+              font-weight: bold;
+            }
+            section {
+              background-color: #f7f2e7;
+            }
+            section p {
+              font-size: 0.8em;
+            }
+          }
+        }
+    }
+  }
+
+  // * NAVBAR
+  .navbar {
+    width: 100%;
+    .nav-top {
+      display: block;
+      width: 80%;
+      img {
+        width: 100%;
+      }
+      .contact {
+        display: block;
+        .email {
+          p {
+            font-size: 0.8em;
+            ion-icon {
+              font-size: 1em;
+            }
+          }
+        }
+        .phone-number {
+          p {
+            font-size: 0.8em;
+            ion-icon {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+    .nav-bottom {
+      .menu-port {
+        .links {
+          margin-right: 0.7em;
+          .navbar-item {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+  // * FOOTER
+  .foot {
+    .footer-container {
+      width: 100%;
+      
+      .social-links li {
+        font-size: 1.4em;
+        margin-right: 0.3em;
+        margin-top: 2rem;
+      }
+      div .skcopyright strong {
+        font-size: 0.7em;
+        margin-left: 0;
+        margin-top: 10rem;
+      }
+      .policy {
+        margin-left: 0;
+        p {
+          font-size: 0.6em;
+          display: block;
+        }
+      }
+    }
+  }
+
+  // * ABOUT
+  .about {
+    margin-top: 19rem;
+    .coaches {
+      font-size: 1.6em;
+    }
+    .about-background {
+      height: 8rem;
+    }
+    .about-background .hero-body .container h1 {
+      font-size: 1.6em;
+    }
+    .about-background .hero-body .container h4 {
+      font-size: 0.7em;
+    }
+    .about-content {
+      width: 100%;
+      p strong em {
+        font-size: 0.8em;
+      }
+    }
+    .about-rene, .about-ola {
+      margin: auto;
+      width: 75%;
+      .media-content {
+        p {
+          font-size: 1.2em;
+        }
+        a {
+          font-size: 0.8em;
+        }
+      }
+      .content {
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .about-rene {
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
+    .rene-modal, .ola-modal {
+      height: 90%;
+      width: 90%;
+      margin: auto;
+      header p {
+        font-size: 1.2em;
+      }
+      section figure {
+        width: 12rem;
+      }
+      section div p {
+        font-size: 0.9em;
+        width: 100%;
+      }
+    }
+  }
+
+  // * MULTISPORTS SERVICES
+  .multisports {
+    margin-right: 0;
+    .multi-sports-background {
+      width: 100%;
+      background-size: cover;
+      h1 {
+        font-size: 1.6em;
+        margin-top: 5rem;
+      }
+    }
+    .infos-and-testimonial {
+      .multisports-info {
+        h3 {
+          font-size: 1em;
+        }
+        h3:first-child {
+          width: 90%;
+        }
+        p {
+          font-size: 0.8em;
+          width: 95%;
+        }
+        .ms-click strong {
+          font-size: 0.8em;
+          width: 100%;
+        }
+        img {
+          height: 13rem;
+          width: 70%;
+        }
+      }
+      .multi-sport-image {
+        margin-left: 0.2rem;
+      }
+      .multi-sport-image img {
+        width: 70%;
+      }
+      .multisports-services-testimonial {
+        width: 70%;
+        margin-left: 1rem;
+        h4 {
+          font-size: 1em;
+        }
+        .testimonial-box{
+          article {
+            width: 100%;
+            height: 10%;
+            p {
+              font-size: 0.8em;
+            }
+            em {
+              font-size: 0.7em;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // * SCHOOL SERVICES
+  .school-services {
+    margin-right: 0;
+    .school-services-background {
+      width: 100%;
+      .ss-text {
+        font-size: 0.75em;
+        width: 100%;
+      }
+      .title {
+        font-size: 1.7em;
+        margin-top: 2rem;
+      }
+    }
+    .school-services-info {
+      .content {
+        h3 {
+          font-size: 1em;
+        }
+        p {
+          font-size: 0.8em;
+          width: 100%;
+        }
+        ul li {
+          font-size: 0.8em;
+          width: 100%;
+        }
+      }
+    }
+    .school-services-testimonial {
+      width: 90%;
+      margin-left: 1rem;
+      h4 {
+        font-size: 1em;
+        width: 90%;
+      }
+      article {
+        width: 90%;
+        p strong {
+          font-size: 0.8em;
+        }
+        em strong {
+          font-size: 0.8em;
+          margin: auto;
+        }
+      }
+    }
+    .school-services-carousel {
+      width: 100%;
+      .school-carousel {
+        margin: auto;
+        width: 90%;
+        .school-slideshow {
+          width: 100%;
+          height: 15rem;
+          img{
+            height: 18rem;
+            width: 100%;
+          }
+        }
+      }
+      .workshops {
+        margin-top: 4rem;
+        margin-bottom: 0;
+        h3 {
+          font-size: 1em;
+        }
+        p {
+          font-size: 0.8em;
+          width: 85%;
+        }
+      }
+    }
+    .school-services-testimonial{
+      h4{
+        margin: 0% 6%;        
+      }
+      article{
+        margin: 3% 6%;
+      }
+    }
+    .divider{
+      display: none;
+    }
+  }
+
+  // * WHATS ON
+  .non-event {
+    .title {
+      font-size: 1.4em;
+      margin-top: 15rem;
+      width: 100%;
+    }
+  }
+
+  .whatson{
+    .hero .change .container .title{
+      font-size: 1.6rem;
+    }
+    margin-top: 17rem;
+    .whatson-info{
+      .whatson-event{
+        margin-right: 22.5%;
+        figure{
+          height: 18rem;
+          width: 20rem;
+          margin-top: 2rem;
+        }
+        h1 strong{
+          font-size: 1.6rem;
+          width: 100%;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    .map{
+      width: 30rem;
+      MAP{
+        width: 20rem;
+      }
+    }
+    .content{
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // * CONTACT
+  .contact-us {
+    margin-top: 17rem;
+    .title {
+      font-size: 1.4em;
+    }
+    .contact-background {
+      height: 10rem;
+      .hero-body{
+        .container {
+          h1{
+            font-size: 1.6em;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+    .contact-form {
+      width: 100%;
+      form div label {
+        font-size: 0.9em;
+      }
+      form button {
+        font-size: 0.9em;
+      }
+    }
+    .sub-form {
+      display: none;
+    }
+  }
+}
