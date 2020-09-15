@@ -112,7 +112,7 @@ const SchoolServices = () => {
                 </em>
               </div>
             </article>
-            <article className="message is-success">
+            {/* <article className="message is-success">
               <div className="message-header">
                 <p><strong>Derek Junior, Beekeeper</strong></p>
               </div>
@@ -124,7 +124,7 @@ const SchoolServices = () => {
                     </strong>
                 </em>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
       </div>

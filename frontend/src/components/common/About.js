@@ -65,13 +65,6 @@ class About extends React.Component {
                       </em>
                     </strong>
                   </p>
-                  <p>
-                    <strong>
-                      <em>
-                      The company was founded by directors, Rene Steer and Ola Williams. Both Rene and Ola currently play football at a Semi Professional level.
-                      </em>
-                    </strong>
-                  </p>
                 </div>
               </div>
             </div>
@@ -155,12 +148,12 @@ class About extends React.Component {
               <footer className="modal-card-foot">
                 <ul>
                     <li>
-                      <a className="rene-twitter" href="https://twitter.com/sportingkidsltd" target="_blank" rel="noopener noreferrer">
+                      <a className="rene-twitter" href="https://twitter.com/ReneSteer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer">
                       <ion-icon name="logo-twitter"></ion-icon>
                       </a>
                     </li>
                     <li>
-                      <a className="rene-instagram" href="https://www.instagram.com/sporting_kids/" target="_blank" rel="noopener noreferrer">
+                      <a className="rene-instagram" href="https://www.instagram.com/renesteer/" target="_blank" rel="noopener noreferrer">
                       <ion-icon name="logo-instagram"></ion-icon>
                       </a>
                     </li>
@@ -188,7 +181,7 @@ class About extends React.Component {
                     Ola is also a semi professional football player. He started playing at this level from the age of 16 where he made his first team debut for Borehamwood FC. He has since played for Harrow borough, Billericay fc, Hampton and Richmond, Wingate and Finchley and is currently playing for cheshunt fc. 
                   </p>
                   <p>
-                    Ola’s coaching career started working part time at Borehamwood which he helped out coaching kids at the half term football camps, He has also worked along side woman’s football legend and ex Arsenal player Rachel Yankee coaching in primary school kids around the north west London area. He has also worked with London rangers FC as the Head of recruitment for their football college scholarship scheme for 16-18 years old. 
+                    Ola’s coaching career started working part time at Borehamwood which he helped out coaching kids at the half term football camps, He has also worked along side woman’s football legend and ex Arsenal player Rachel Yankey coaching in primary school kids around the north west London area. He has also worked with London rangers FC as the Head of recruitment for their football college scholarship scheme for 16-18 years old. 
                     <br/><br/>
                     Ola has received good sporting qualifications  such as football level 1 coaching badge, certificate and diploma in sports, general sports and training and fitness in sports.
                   </p>

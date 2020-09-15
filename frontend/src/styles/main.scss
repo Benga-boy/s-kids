@@ -76,7 +76,7 @@ body {
       --animate-duration: 3s;
       margin-bottom: 40px;
       font-size: 48px;
-      color: #f2f4fb;
+      color: black;
       font-weight: bold;
     }
 
@@ -271,6 +271,9 @@ body {
   }
   .about-background .hero-body .container h1 {
     font-size: 44px;
+  }
+  .about-background .hero-body .container h4{
+    font-size: 20px;
   }
   .about-ola {
     margin-right: 40px;
@@ -471,7 +474,7 @@ body {
 
 
 
-//* WHATS ON
+//! WHATS ON
 .non-event {
   // background-color: #00bcd4;
   .title {
@@ -517,8 +520,20 @@ body {
     margin: 60px 30px 0 30px;
     }
     .multisports-info{
-      margin-left: 20px;
-      margin-right: 0;
+      // margin-left: 20px;
+      // margin-right: 0;
+      margin: auto;
+      .multi-sports-carousel{
+        width: 100%;
+        margin-left: 20px;
+        .multisports-slideshow img {
+          height: 400px;
+          width: 100%;
+        }
+      }
+      .ms-click{
+        margin-top: 30px;
+      }
       .ms-click strong {
         text-decoration: none;
       }
@@ -537,7 +552,7 @@ body {
         margin-bottom: 16px;
       }
       p {
-        width: 95%;
+        width: 100%;
         margin-bottom: 20px;
       }
       p strong {
@@ -680,7 +695,7 @@ body {
   }
   .hero .hero-body .container h3{
     font-weight: bold;
-    width: 80%;
+    width: 100%;
   }
   // * Beliefs
   .believe{

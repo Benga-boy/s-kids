@@ -1,8 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { oneTwoOne } from '../../styles/assets/homeCarousel/homeCarousel-data'
+import { multisportCarousel } from '../../styles/assets/homeCarousel/homeCarousel-data'
+import Slider from 'react-slick'
+
 
 const Multisports = () => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 3000
+  }
+
   return (
     <div className="multisports">
       <section className="multi-sports-background hero has-text-centered">
@@ -33,12 +47,20 @@ const Multisports = () => {
                   can customise your party to make it a birthday to remember! Enquire here for prices
                 </p>
 
-                <img src={oneTwoOne} alt="Sporting Kids birthday parties" />
+                <div className="multi-sports-carousel">
+                  <Slider {...settings}>
+                    {
+                      multisportCarousel.map(image => <div className="multisports-slideshow" key={image.name}>
+                        <img src={image.value} alt="Sporting kids having fun" />
+                      </div>)
+                    }
+                  </Slider>
+                </div>
                 <p className="ms-click"><strong>Click <Link to="/whatson"><span>here</span></Link> for after school clubs and Sporting Kids events near you!</strong></p>
               </div>
-              <div className="column multi-sport-image">
+              {/* <div className="column multi-sport-image">
               <img src={oneTwoOne} alt="Sporting Kids one to one coaching" />
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="divider"></div>
@@ -53,6 +75,17 @@ const Multisports = () => {
                   <div className="message-body">
                     <em>
                       <strong>"Fantastic training, games and activities for all kids and all abilities, they provide different sports for all interests and a space where children will grow in self-esteem and confidence."</strong></em>
+                  </div>
+                </article>
+              </div>
+              <div className="testimonial-box">
+                <article className="message is-success">
+                  <div className="message-header">
+                    <p>Johanna, Parent</p>
+                  </div>
+                  <div className="message-body">
+                    <em>
+                      <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
                   </div>
                 </article>
               </div>

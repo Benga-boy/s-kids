@@ -435,9 +435,11 @@
         margin-top: 2rem;
       }
       div .skcopyright strong {
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin-left: 0;
         margin-top: 10rem;
+        color: chartreuse;
+        width: 100%;
       }
       .policy {
         margin-left: 0;
@@ -462,7 +464,7 @@
       font-size: 1.6em;
     }
     .about-background .hero-body .container h4 {
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
     .about-content {
       width: 100%;
@@ -515,8 +517,9 @@
       width: 100%;
       background-size: cover;
       h1 {
-        font-size: 1.6em;
+        font-size: 1.5em;
         margin-top: 5rem;
+        width: 100%;
       }
     }
     .infos-and-testimonial {
@@ -538,6 +541,14 @@
         img {
           height: 13rem;
           width: 70%;
+        }
+        .multi-sports-carousel{
+          width: 80%;
+          margin-left: 2rem;
+          .multisports-slideshow img {
+            height: 14rem;
+            width: 100%;
+          }
         }
       }
       .multi-sport-image {
@@ -707,11 +718,11 @@
       font-size: 1.4em;
     }
     .contact-background {
-      height: 10rem;
+      height: 8rem;
       .hero-body{
         .container {
           h1{
-            font-size: 1.6em;
+            font-size: 1.3em;
             margin-top: 0.5rem;
           }
         }
@@ -728,6 +739,79 @@
     }
     .sub-form {
       display: none;
+    }
+  }
+
+  // * CHILD PROTECTION
+  .childprotection{
+    margin-top: 17rem;
+    .hero {
+      height: 12rem;
+    }
+    .hero .hero-body .container .title {
+      font-size: 1.5rem;
+    }
+    .hero .hero-body .container h3 {
+      font-size: 0.7rem;
+      width: 100%;
+    }
+
+    .container .cp-statements .believe h3 {
+      font-size: 0.9rem;
+    }
+    // .container .cp-statements {
+    //   width: 100%;
+    // }
+    .container .cp-statements .beliefs ul li{
+      font-size: 0.8rem;
+      width: 90%;
+    }
+    .container .cp-statements .order-one ol li {
+      font-size: 0.8rem;
+      width: 90%;
+    }
+    .container .cp-statements .staffing-policies{
+      h2 {
+        font-size: 0.8rem;
+      }
+      ol li {
+        font-size: 0.8rem;
+        width: 90%;
+      }
+    }
+    .container .cp-statements .conduct{
+      h4 {
+        font-size: 0.8rem;
+      }
+      ol li {
+        font-size: 0.8rem;
+        width: 90%;
+      }
+    }
+  }
+
+  .privacy {
+    margin-top: 17rem;
+    .hero {
+      height: 11rem;
+    }
+    .hero .hero-body .container .title {
+      font-size: 1.5rem;
+    }
+    .hero .hero-body .container h3 {
+      font-size: 0.7rem;
+      width: 100%;
+    }
+    .container .privacy-statements .p-statements {
+      p {
+        font-size: 0.8rem;
+      }
+      ul li {
+        font-size: 0.8rem;
+      }
+      h3 {
+        font-size: 0.9rem;
+      }
     }
   }
 }
