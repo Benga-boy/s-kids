@@ -92,7 +92,7 @@ const Multisports = () => {
               <div className="testimonial-box">
                 <article className="message is-success">
                   <div className="message-header">
-                    <p>Johanna, Parent</p>
+                    <p>Jeff, Parent</p>
                   </div>
                   <div className="message-body">
                     <em>

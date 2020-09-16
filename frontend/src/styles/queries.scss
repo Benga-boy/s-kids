@@ -1,6 +1,9 @@
 /* from big tablets to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
 
+  *{
+    box-sizing: border-box;
+  }
   // ! HOME
   .home {
     width: 100%;
@@ -232,6 +235,9 @@
 
 // * Ipad side-ways flip
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
+  *{
+    box-sizing: border-box;
+  }
   // ! HOME
   .home {
     .welcome {
@@ -428,6 +434,9 @@
 
 /* small tablets to big tablets 768 - 1023px */
 @media only screen and (max-width: 1023px) {
+  * {
+    box-sizing: border-box;
+  }
   // * NAVBAR
 .navbar {
   .nav-top {
@@ -687,10 +696,14 @@
 
 /* small phones 0 - 480px */
 @media only screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
   // * HOME
   .home {
     width: 100%;
     margin-right: 0;
+    margin-top: 12rem;
     .home-section{
       .carousel-wrapper {
         width: 100%;
@@ -784,6 +797,10 @@
           }
         }
       }
+      #sk-logo{
+        height: 4rem;
+        width: 100%;
+      }
     }
     .nav-bottom {
       .menu-port {
@@ -796,6 +813,8 @@
       }
     }
   }
+
+
   // * FOOTER
   .foot {
     .footer-container {
@@ -825,7 +844,7 @@
 
   // * ABOUT
   .about {
-    margin-top: 15rem;
+    margin-top: 12rem;
     .coaches {
       font-size: 1.6em;
     }
@@ -885,11 +904,11 @@
 
   // * MULTISPORTS SERVICES
   .multisports {
-    margin-top: 15rem;
+    margin-top: 12.5rem;
     margin-right: 0;
     .multi-sports-background {
       background-size: contain;
-      height: 8.2rem;
+      height: 8.5rem;
       margin-top: 2.5rem;
       .title {
         font-size: 1.5rem;
@@ -898,6 +917,7 @@
       }
     }
     .infos-and-testimonial {
+      margin-left: 3rem;
       .multisports-info {
         h3 {
           font-size: 1em;
@@ -937,6 +957,7 @@
         margin-left: 1rem;
         h4 {
           font-size: 1em;
+          width: 100%;
         }
         .testimonial-box{
           article {
@@ -957,6 +978,7 @@
 
   // * SCHOOL SERVICES
   .school-services {
+    margin-top: 12rem;
     margin-right: 0;
     .school-services-background {
       width: 100%;
@@ -970,6 +992,7 @@
       }
     }
     .school-services-info {
+      margin-left: -1rem;
       .content {
         h3 {
           font-size: 1em;
@@ -1019,6 +1042,7 @@
       .workshops {
         margin-top: 4rem;
         margin-bottom: 0;
+        margin-left: 1rem;
         h3 {
           font-size: 1em;
         }
@@ -1063,7 +1087,7 @@
       font-size: 1.2rem;
       margin-top: -0.75rem;
     }
-    margin-top: 15rem;
+    margin-top: 12rem;
     .whatson-info{
       .whatson-event{
         margin-right: 22.5%;
@@ -1097,7 +1121,7 @@
 
   // * CONTACT
   .contact-us {
-    margin-top: 15rem;
+    margin-top: 12rem;
     .title {
       font-size: 1.3em;
     }
@@ -1128,7 +1152,7 @@
 
   // * CHILD PROTECTION
   .childprotection{
-    margin-top: 15rem;
+    margin-top: 12rem;
     .hero {
       height: 12rem;
     }
@@ -1177,7 +1201,7 @@
 
   // * PRIVACY
   .privacy {
-    margin-top: 15rem;
+    margin-top: 12rem;
     .hero {
       height: 11rem;
     }
@@ -1204,10 +1228,14 @@
 
 // Target Iphones 
 @media only screen and (max-width: 375px) {
+  *{
+    box-sizing: border-box;
+  }
   // ! HOME PAGE
   .home {
     width: 100%;
     margin-right: 0;
+    margin-top: 12rem;
     .welcome {
       height: 5rem;
       .animate__animated.animate__heartBeat {
@@ -1240,15 +1268,26 @@
     }
   }
 
+  // // ! NAVBAR 
+  .navbar {
+    .nav-top {
+      #sk-logo{
+        height: 4rem;
+        width: 100%;
+      }
+    }
+  }
+
   // ! ABOUT PAGE
   .about {
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
 
   // ! MULTISPORTS PAGE
   .multisports{
     width: 100%;
+    margin-top: 12.5rem;
     .multi-sports-background {
       .title {
         font-size: 1.4rem;
@@ -1300,6 +1339,7 @@
   // ! SCHOOL SERVICES
   .school-services{
     width: 100%;
+    margin-top: 12rem;
     .school-services-background {
       background-size: contain;
       height: 10.22rem;
@@ -1309,7 +1349,7 @@
   // ! WHATSON
   .whatson{
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     .hero {
       height: 6rem;
     }
@@ -1339,7 +1379,7 @@
   // ! CONTACT
   .contact-us{
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     .contact-background {
       height: 6rem;
       .hero-body{
@@ -1356,7 +1396,7 @@
   // ! PRIVACY POLICY
   .privacy{
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     .hero .hero-body .container .title {
       font-size: 1.5rem;
     }
@@ -1369,7 +1409,7 @@
   // ! CHILD PROTECTION
   .childprotection{
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     .hero .hero-body .container .title {
       font-size: 1.3rem;
     }
