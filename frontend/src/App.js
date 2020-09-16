@@ -16,10 +16,12 @@ import Contact from './components/pages/Contact'
 import Login from './components/authentication/Login'
 import Error from './components/common/Error'
 import SecureRoute from './components/common/SecureRoute'
+import ScrollToTop from './components/common/ScrollToTop'
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />

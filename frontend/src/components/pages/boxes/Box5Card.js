@@ -36,7 +36,7 @@ class BoxFiveCard extends React.Component {
               </header>
               <section className="modal-card-body">
                 <p>
-              Perfect for a group of siblings or friends! These fun sessions aim to improve skills, confidence and overall performance in a chosen sport or multi sports.
+                  Our parties are tailored to suit your birthday wishes no matter how big or small, they are fun filled with multi-sports and games. We have the bronze, silver and gold packages to choose from or you can customise your party to make it a birthday to remember! Enquire here for prices
                 </p>
               </section>
               <footer className="modal-card-foot">

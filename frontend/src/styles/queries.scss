@@ -388,13 +388,12 @@
   .navbar {
     width: 100%;
     .nav-top {
-      display: block;
+      // display: block;
       width: 80%;
       img {
         width: 100%;
       }
       .contact {
-        display: block;
         .email {
           p {
             font-size: 0.8em;
@@ -514,12 +513,12 @@
   .multisports {
     margin-right: 0;
     .multi-sports-background {
-      width: 100%;
-      background-size: cover;
+      background-size: contain;
+      height: 8.2rem;
       h1 {
-        font-size: 1.5em;
-        margin-top: 5rem;
+        font-size: 1.5rem;
         width: 100%;
+        margin-top: -1rem;
       }
     }
     .infos-and-testimonial {
@@ -590,8 +589,8 @@
         width: 100%;
       }
       .title {
-        font-size: 1.7em;
-        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin-top: -2.4rem;
       }
     }
     .school-services-info {
@@ -663,6 +662,11 @@
     }
     .divider{
       display: none;
+    }
+
+    .school-services-background {
+      background-size: contain;
+      height: 11.2rem;
     }
   }
 
@@ -790,6 +794,8 @@
     }
   }
 
+
+  // * PRIVACY
   .privacy {
     margin-top: 17rem;
     .hero {
@@ -812,6 +818,171 @@
       h3 {
         font-size: 0.9rem;
       }
+    }
+  }
+}
+
+// Target Iphones 
+@media only screen and (max-width: 375px) {
+  // ! HOME PAGE
+  .home {
+    width: 100%;
+    margin-right: 0;
+    .welcome {
+      height: 7rem;
+      .animate__animated.animate__heartBeat {
+      font-size: 1.1rem;
+      margin-top: -1.6rem;
+      }
+      .home-subtitle {
+        width: 100%;
+        font-size: 0.60rem;
+      }
+    }
+    .home-section{
+      .carousel-wrapper {
+        width: 100%;
+        .home-slideshow {
+          height: 10rem;
+          width: 100%;
+          img {
+            height: 12rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+    #monitorscreen {
+      margin-top: 1rem;
+    }
+    .offerings {
+      margin-top: -3rem;
+    }
+  }
+
+  // ! ABOUT PAGE
+  .about {
+    margin-top: 15rem;
+  }
+
+  // ! MULTISPORTS PAGE
+  .multisports{
+    .multi-sports-background {
+      h1 {
+        font-size: 1.4rem;
+        width: 100%;
+      }
+    }
+    .multi-sports-carousel{
+      width: 70%;
+      margin-left: -2rem;
+      .multisports-slideshow img {
+        height: 12rem;
+        width: 100%;
+      }
+    }
+    .multisports-services-testimonial {
+      .testimonial-box {
+        margin-left: 2rem;
+        width: 100%;
+      }
+      h4 {
+        margin-left: 2rem;
+        width: 100%;
+      }
+    }
+  }
+
+  // ! FOOTER
+  // .foot {
+  //   .footer-container {
+  //     width: 100%;
+  //     div .skcopyright strong {
+  //       font-size: 0.60em;
+  //       margin-left: 0;
+  //       margin-top: 10rem;
+  //       color: chartreuse;
+  //       width: 100%;
+  //     }
+  //     .policy {
+  //       margin-left: 0;
+  //       p {
+  //         font-size: 0.6em;
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // ! SCHOOL SERVICES
+  .school-services{
+    .school-services-background {
+      background-size: contain;
+      height: 10.22rem;
+    }
+  }
+
+  // ! WHATSON
+  .whatson{
+    margin-top: 15rem;
+    .hero .change .container .title{
+      font-size: 1.3rem;
+    }
+    .whatson-info{
+      .whatson-event{
+        margin-left: -2rem;
+        h1 strong{
+          font-size: 1.4rem;
+          width: 100%;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+    .content{
+      h3{
+        font-size: 1.1rem;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // ! CONTACT
+  .contact-us{
+    margin-top: 15rem;
+    .contact-background {
+      .hero-body{
+        .container {
+          h1{
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+
+  // ! PRIVACY POLICY
+  .privacy{
+    margin-top: 15rem;
+    .hero .hero-body .container .title {
+      font-size: 1.5rem;
+    }
+    .hero .hero-body .container h3 {
+      font-size: 0.7rem;
+      width: 100%;
+    }
+  }
+
+  // ! CHILD PROTECTION
+  .childprotection{
+    margin-top: 15rem;
+    .hero .hero-body .container .title {
+      font-size: 1.3rem;
+    }
+    .hero .hero-body .container h3 {
+      font-size: 0.7rem;
+      width: 100%;
     }
   }
 }

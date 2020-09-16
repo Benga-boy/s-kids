@@ -96,7 +96,7 @@ const Multisports = () => {
                   </div>
                   <div className="message-body">
                     <em>
-                      <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
+                      <strong>"My son Kaylan learnt so much from the guys, thoroughly enjoyed himself and can't wait for the next session. Rene and his partner have a knack for getting kids engaged and having an absolute ball while doing so. I'd recommend Sports Kids to everyone <span role="img" aria-label="happy client">👌🏿</span>!"</strong></em>
                   </div>
                 </article>
               </div>

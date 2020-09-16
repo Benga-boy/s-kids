@@ -87,9 +87,9 @@ const SchoolServices = () => {
                 <p>
                   Sporting Kids have experience of working in a range of settings including SEN provisions, youth clubs
                   and Pupil Referral Units. Through working with children and young people with social, emotional and
-                mental health needs we have developed our Wellbeing Workshops.<br /><br />
-                These workshops incorporate mentoring sessions, discussion-based activities and mental health
-                awareness alongside promoting the importance of keeping active through sports.
+                  mental health needs we have developed our Wellbeing Workshops.<br /><br />
+                  These workshops incorporate mentoring sessions, discussion-based activities and mental health
+                  awareness alongside promoting the importance of keeping active through sports.
                 </p>
                 <p className="enquire">Enquire <Link to="/contact"><strong>here</strong></Link> for more information about our school services</p>
               </div>
