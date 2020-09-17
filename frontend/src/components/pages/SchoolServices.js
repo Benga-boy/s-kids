@@ -21,16 +21,16 @@ const SchoolServices = () => {
   return (
     <div className="school-services">
       <section className="school-services-background hero has-text-centered">
-        <div className="hero-body">
-          <div className="container">
+        {/* <div className="hero-body"> */}
+          {/* <div className="container"> */}
             <h1 className="title">
               SCHOOL SERVICES
             </h1>
-            <p className="ss-text">
+            {/* <p className="ss-text">
               We provide multisport sessions for children, with the aim of having fun in a fun, safe and challenging environment.
-            </p>
-          </div>
-        </div>
+            </p> */}
+          {/* </div>
+        </div> */}
       </section>
       <div className="columns">
         <div className="column is-two-thirds">

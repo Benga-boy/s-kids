@@ -20,13 +20,13 @@ const Multisports = () => {
   return (
     <div className="multisports">
       <section className="multi-sports-background hero has-text-centered">
-        <div className="hero-body">
-          <div className="container">
+        {/* <div className="hero-body">
+          <div className="container"> */}
             <h1 className="title">
               MULTI SPORTS COACHING
             </h1>
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
       </section>
       <section className="infos-and-testimonial">
         <div className="columns">
