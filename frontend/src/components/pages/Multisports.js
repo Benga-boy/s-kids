@@ -32,7 +32,7 @@ const Multisports = () => {
         <div className="columns">
           <div className="column is-two-thirds">
             <div className="columns">
-              <div className="column is-three-fifths multisports-info">
+              <div className="column is-two-thirds multisports-info">
                 <h3>One to One and small groups coaching</h3>
                 <p>
                   We offer private 1:1 coaching sessions for individuals who want to improve their skills, confidence

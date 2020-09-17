@@ -3,6 +3,8 @@
 
   *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   // ! HOME
   .home {
@@ -237,9 +239,12 @@
 @media only screen and (min-width: 1024px) and (max-width: 1024px) {
   *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   // ! HOME
   .home {
+    width: 100%;
     .welcome {
       height: 12rem;
       .home-subtitle {
@@ -251,6 +256,7 @@
 
   // ! ABOUT
   .about {
+    width: 100%;
     .about-background {
       height: 10rem;
       .hero-body .container .title {
@@ -264,6 +270,7 @@
 
   // ! MULTISPORTS
   .multisports {
+    width: 100%;
     .multi-sports-background{
       margin-top: 3rem;
       height: 18rem;
@@ -332,6 +339,7 @@
 
   // ! SCHOOL SERVICES
   .school-services{
+    width: 100%;
     // .school-services-background{
     //   height: 28rem;
     // }
@@ -416,11 +424,13 @@
 
   // ! WHATS ON
   .whatson {
+    width: 100%;
     margin-top: 13.5rem;
   }
 
   // ! CONTACT
   .contact-us {
+    height: 70vh;
     .contact-background {
       height: 9rem;
       .hero-body .container .title {
@@ -434,8 +444,10 @@
 
 /* small tablets to big tablets 768 - 1023px */
 @media only screen and (max-width: 1023px) {
-  * {
+  *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   // * NAVBAR
 .navbar {
@@ -454,6 +466,7 @@
 // * HOME
 
 .home {
+  width: 100%;
   .welcome {
     height: 12rem;
     margin-bottom: 0;
@@ -517,6 +530,7 @@
 
 // * ABOUT 
 .about {
+  width: 100%;
   margin-top: 17rem;
   .about-background .hero-body .container h1 {
     font-size: 2.4em;
@@ -550,6 +564,7 @@
 
 // * MULTISPORTS
 .multisports {
+  width: 100%;
   margin-top: 16rem;
   margin-right: 0;
   .multi-sports-background {
@@ -561,6 +576,7 @@
     }
   }
   .multisports-info {
+    margin-left: 4rem;
     h3 {
       font-size: 1.4em;
     }
@@ -579,11 +595,13 @@
   }
   .multisports-services-testimonial {
     width: 60%;
-    margin-left: 1rem;
     h4 {
       font-size: 1.7em;
+      margin-left: 3rem;
     }
     .testimonial-box {
+      margin-left: 3rem;
+      width: 100%;
       em {
         font-size: 0.9em;
       }
@@ -593,6 +611,7 @@
 
 // * SCHOOL SERVICES
 .school-services {
+  width: 100%;
   margin-top: 16rem;
   .school-services-background {
     h1 {
@@ -652,6 +671,7 @@
   }
 }
 .contact-us {
+  width: 100%;
   .title {
     font-size: 1.6em;
     text-align: center;
@@ -696,8 +716,10 @@
 
 /* small phones 0 - 480px */
 @media only screen and (max-width: 480px) {
-  * {
+  *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   // * HOME
   .home {
@@ -844,6 +866,7 @@
 
   // * ABOUT
   .about {
+    width: 100%;
     margin-top: 12rem;
     .coaches {
       font-size: 1.6em;
@@ -904,6 +927,7 @@
 
   // * MULTISPORTS SERVICES
   .multisports {
+    width: 100%;
     margin-top: 12.5rem;
     margin-right: 0;
     .multi-sports-background {
@@ -917,7 +941,7 @@
       }
     }
     .infos-and-testimonial {
-      margin-left: 3rem;
+      margin-left: 0;
       .multisports-info {
         h3 {
           font-size: 1em;
@@ -938,8 +962,8 @@
           width: 70%;
         }
         .multi-sports-carousel{
-          width: 80%;
-          margin-left: 2rem;
+          width: 90%;
+          margin-left: 0;
           .multisports-slideshow img {
             height: 14rem;
             width: 100%;
@@ -978,6 +1002,7 @@
 
   // * SCHOOL SERVICES
   .school-services {
+    width: 100%;
     margin-top: 12rem;
     margin-right: 0;
     .school-services-background {
@@ -1080,6 +1105,7 @@
   }
 
   .whatson{
+    width: 100%;
     .hero {
       height: 6rem;
     }
@@ -1121,6 +1147,7 @@
 
   // * CONTACT
   .contact-us {
+    width: 100%;
     margin-top: 12rem;
     .title {
       font-size: 1.3em;
@@ -1152,6 +1179,7 @@
 
   // * CHILD PROTECTION
   .childprotection{
+    width: 100%;
     margin-top: 12rem;
     .hero {
       height: 12rem;
@@ -1201,6 +1229,7 @@
 
   // * PRIVACY
   .privacy {
+    width: 100%;
     margin-top: 12rem;
     .hero {
       height: 11rem;
@@ -1230,6 +1259,8 @@
 @media only screen and (max-width: 375px) {
   *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   // ! HOME PAGE
   .home {
@@ -1305,13 +1336,16 @@
     }
     .multisports-services-testimonial {
       .testimonial-box {
-        margin-left: 2rem;
+        margin-left: 3rem;
         width: 100%;
       }
       h4 {
-        margin-left: 2rem;
+        margin-left: 3rem;
         width: 100%;
       }
+    }
+    .multisports-info {
+      margin-left: 3rem;
     }
   }
 

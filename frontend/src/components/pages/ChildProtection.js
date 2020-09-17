@@ -28,9 +28,9 @@ const ChildProtection = () => {
             <div className="beliefs">
               <ul>
                 <li>The child’s welfare is, and must always be, the paramount consideration</li>
-                <li>All children and young people have a right to be protected from abuse regardless of their age, gender, <span>culture, language, racial origin, religious beliefs or sexual orientation</span></li>
+                <li>All children and young people have a right to be protected from abuse regardless of their age, gender, culture, language, racial origin, religious beliefs or sexual orientation</li>
                 <li>All suspicions and allegations of abuse will be taken seriously and responded to swiftly and appropriately</li>
-                <li>All suspicions and allegations of abuse will be taken seriously and responded to swiftly and parents or <span>carers is essential</span></li>
+                <li>All suspicions and allegations of abuse will be taken seriously and responded to swiftly and parents or carers is essential</li>
               </ul>
             </div>
             <div className="order-one">
