@@ -27,14 +27,14 @@ class Navbar extends React.Component {
           </Link>
           <div className="contact">
             <div className="email">
-              <p><strong><ion-icon name="mail-outline"></ion-icon></strong></p>
+              <p><a href="mailto:admin@sportingkids.co.uk" target="_blank" rel="noopener noreferrer"><strong><ion-icon name="mail-outline"></ion-icon></strong></a></p>
               <div className="email-detail">
                 <p><strong>Email Us:</strong></p>
                 <p>admin@sportingkids.co.uk</p>
               </div>
             </div>
             <div className="phone-number">
-              <p><strong><ion-icon name="call-outline"></ion-icon></strong></p>
+              <p><a href="tel:07904618138" target="_blank" rel="noopener noreferrer"><strong><ion-icon name="call-outline"></ion-icon></strong></a></p>
               <div className="phone-number-detail">
                 <p><strong>Call Us:</strong></p>
                 <p>07904618138</p>
