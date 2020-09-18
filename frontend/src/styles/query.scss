@@ -33,7 +33,7 @@
   .navbar {
     width: 100%;
     .nav-top {
-      display: block;
+      display: inline-block;
       width: 80%;
       img {
         width: 100%;
@@ -973,6 +973,7 @@
     margin-top: 12rem;
     .title {
       font-size: 1.3rem;
+      margin-left: 7rem;
     }
     .contact-background {
       height: 6rem;
@@ -981,6 +982,7 @@
           h1{
             font-size: 1rem;
             margin-top: 0;
+            margin-left: 0;
           }
         }
       }
