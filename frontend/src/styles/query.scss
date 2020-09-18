@@ -1,3 +1,458 @@
+// ? MAX WIDTH 1023
+@media (max-width: 1023px) {
+  // ! FOOTER
+// * FOOTER 
+.foot {
+  height: 11.5rem;
+  .footer-container {
+    width: 100%;
+    .social-links li {
+      font-size: 3em;
+      margin-right: 0.4em;
+      margin-top: 0.7rem;
+    }
+    div .skcopyright strong {
+      font-size: 1.2em;
+      margin-left: 0;
+      margin-top: 10rem;
+    }
+    .policy {
+      margin-left: 2rem;
+      p {
+        font-size: 1em;
+        // display: block;
+      }
+    }
+  }
+}
+
+// ! HOME
+.home {
+  width: 100%;
+  margin-top: 10rem;
+  .welcome {
+    height: 12rem;
+    margin-bottom: 0;
+    .animate__animated .animate__bounceInUp {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .home-subtitle {
+      width: 85%;
+      font-size: 1em;
+      margin-top: -1.5rem;
+    }
+  }
+  #monitorscreen {
+    .video {
+      width: 100%;
+      background-color: #ffffff;
+      video {
+        width: 57%;
+        height: auto;
+        margin-left: 21.5%;
+      }
+    }
+  }
+
+  // * MODALS 
+  .offerings {
+    .modal {
+      .modal-card {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+  .home-section{
+    .carousel-wrapper {
+      width: 100%;
+      .home-slideshow {
+        height: 13rem;
+        width: 100%;
+        img {
+          height: 13.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+  // ! NAVBAR
+  .navbar {
+    width: 100%;
+    .nav-top {
+      width: 100%;
+      // img {
+      //   width: 100%;
+      // }
+      .contact {
+        .email {
+          p {
+            font-size: 1rem;
+            ion-icon {
+              font-size: 2rem;
+            }
+          }
+        }
+        .phone-number {
+          p {
+            font-size: 1rem;
+            ion-icon {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      #sk-logo{
+        height: 4rem;
+        width: 80%;
+      }
+    }
+    .nav-bottom {
+      height: -20rem;
+      .menu-port {
+        .links {
+          // margin-right: 0.7rem;
+          .navbar-item {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  // ! ABOUT 
+.about {
+  width: 100%;
+  margin-top: 10rem;
+  .about-background{
+    height: 8rem;
+  }
+  .about-background .hero-body .container h1 {
+    font-size: 2.4rem;
+    margin-top: -2rem;
+  }
+  .about-rene, .about-ola{
+    width: 50%;
+    margin: auto;
+  }
+  .coaches {
+    margin-bottom: 3rem;
+  }
+  .rene-modal, .ola-modal {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    header p {
+      font-size: 1.8rem;
+    }
+    section figure {
+      width: 14rem;
+      margin-bottom: 2.2rem;
+    }
+    section div p {
+      font-size: 1.1rem;
+      width: 95%;
+    }
+  }
+}
+
+// ! MULTISPORTS
+.multisports {
+  width: 100%;
+  margin-top: 10rem;
+  margin-right: 0;
+  .multi-sports-background {
+    background-size: cover;
+    height: 10rem;
+    margin-top: 2.5rem;
+    .title {
+      font-size: 2.2rem;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+  .infos-and-testimonial {
+    margin-left: 3rem;
+    .multisports-info {
+      h3 {
+        font-size: 1.8rem;
+      }
+      h3:first-child {
+        width: 90%;
+      }
+      p {
+        font-size: 1.2rem;
+        width: 95%;
+        line-height: 1.5;
+      }
+      .ms-click strong {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      img {
+        height: 15rem;
+        width: 70%;
+      }
+      .multi-sports-carousel{
+        width: 80%;
+        margin-left: 2rem;
+        margin-bottom: 7rem;
+        height: 16rem;
+        .multisports-slideshow img {
+          height: 19rem;
+          width: 100%;
+        }
+      }
+    }
+    .multi-sport-image {
+      margin-left: 0.2rem;
+    }
+    .multi-sport-image img {
+      width: 70%;
+    }
+    .multisports-services-testimonial {
+      margin-top: -2rem;
+      width: 80%;
+      margin-left: 1rem;
+      h4 {
+        font-size: 2rem;
+        width: 100%;
+      }
+      .testimonial-box{
+        article {
+          width: 100%;
+          height: 10%;
+          p {
+            font-size: 1.2rem;
+          }
+          em {
+            font-size: 1rem;
+            width: 100%;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+   // ! SCHOOL SERVICES 
+    .school-services {
+    margin-top: 10rem;
+    width: 100%;
+    margin-right: 0;
+    .school-services-background {
+      background-size: cover;
+      height: 12rem;
+      .title {
+        font-size: 2.2rem;
+        margin: auto;
+      }
+    }
+    .school-services-info {
+      margin-left: -1rem;
+      .content {
+        h3 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.2rem;
+          width: 100%;
+          line-height: 1.5;
+        }
+        ul li {
+          font-size: 1.2rem;
+          width: 100%;
+        }
+      }
+    }
+    .school-services-testimonial {
+      width: 90%;
+      margin-left: 3.5rem;
+      h4 {
+        font-size: 2rem;
+        width: 90%;
+      }
+      article {
+        width: 90%;
+        p strong {
+          font-size: 1.2rem;
+        }
+        em strong {
+          font-size: 1rem;
+          margin: auto;
+          line-height: 1.5;
+        }
+      }
+    }
+    .school-services-carousel {
+      width: 90%;
+      margin-left: 2rem;
+      .school-carousel {
+        margin: auto;
+        width: 90%;
+        .school-slideshow {
+          width: 100%;
+          height: 19rem;
+          img{
+            height: 19rem;
+            width: 100%;
+          }
+        }
+      }
+      .workshops {
+        margin-top: 4rem;
+        margin-bottom: -11rem;
+        margin-left: 2rem;
+        h3 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.2rem;
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  // ! WHATS ON
+  .whatson{
+    margin-top: 10rem;
+    width: 100%;
+    margin-right: 0;
+  }
+
+   // ! CONTACT
+    .contact-us {
+    width: 100%;
+    margin-top: 10rem;
+    margin-right: 0;
+    .title {
+      font-size: 2.2rem;
+      margin-left: 4rem;
+    }
+    .contact-background {
+      height: 8rem;
+      .hero-body{
+        .container {
+          h1{
+            font-size: 2.2rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .contact-form {
+      width: 80%;
+      margin: auto;
+      padding: 2rem;
+      form div label {
+        font-size: 0.9rem;
+      }
+      form button {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+    // ! CHILD PROTECTION
+    .childprotection{
+      width: 100%;
+      margin-top: 10rem;
+      .hero {
+        height: 13rem;
+      }
+      .hero .hero-body .container .title {
+        font-size: 2.2rem;
+        margin-top: 0rem;
+      }
+      .hero .hero-body .container h3 {
+        font-size: 1rem;
+        width: 100%;
+        margin-top: -0.50rem;
+        line-height: 1.5;
+      }
+  
+      .container .cp-statements .believe h3 {
+        font-size: 1.2rem;
+      }
+      // .container .cp-statements {
+      //   width: 100%;
+      // }
+      .container .cp-statements .beliefs ul li{
+        font-size: 1.2rem;
+        width: 90%;
+        line-height: 1.5;
+      }
+      .container .cp-statements .order-one ol li {
+        font-size: 1.2rem;
+        width: 90%;
+        margin-left: 1.5rem;
+      }
+      .container .cp-statements .staffing-policies{
+        h2 {
+          font-size: 1.2rem;
+        }
+        ol li {
+          font-size: 1.2rem;
+          width: 90%;
+          line-height: 1.5;
+        }
+      }
+      .container .cp-statements .conduct{
+        h4 {
+          font-size: 1.2rem;
+        }
+        ol li {
+          font-size: 1.2rem;
+          width: 90%;
+          line-height: 1.5;
+        }
+      }
+    }
+  
+    // ! PRIVACY
+     // * PRIVACY
+      .privacy {
+      width: 100%;
+      margin-top: 10rem;
+      margin-right: 0;
+      .hero {
+        height: 11rem;
+      }
+      .hero .hero-body .container .title {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+      }
+      .hero .hero-body .container h3 {
+        font-size: 1rem;
+        width: 100%;
+        line-height: 1.5;
+        margin-top: -0.5rem;
+      }
+      .container .privacy-statements .p-statements {
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-left: 2rem;
+        }
+        ul li {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-left: 5rem;
+        }
+        h3 {
+          font-size: 1.6rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+}
+
+
 // ? MAX WIDTH 767
 @media (max-width: 767px) {
   // ! FOOTER
@@ -57,7 +512,7 @@
         }
       }
       #sk-logo{
-        height: 4rem;
+        height: 5rem;
         width: 100%;
       }
     }
@@ -77,6 +532,8 @@
   // ! HOME
   .home {
     margin-top: 12rem;
+    width: 100%;
+    margin-right: 0;
     .welcome {
       height: 10rem;
     }
@@ -157,18 +614,18 @@
       font-size: 1.6rem;
     }
     .about-background {
-      height: 8rem;
+      height: 10rem;
     }
     .about-background .hero-body .container h1 {
       font-size: 2.2rem;
-      margin-top: -0.50rem;
+      margin-top: 1rem;
     }
     .about-background .hero-body .container h4 {
       font-size: 1.2rem;
       margin-top: -1rem;
     }
     .about-content {
-      width: 100%;
+      width: 90%;
       p strong em {
         font-size: 1rem;
         line-height: 1.5;
@@ -221,12 +678,12 @@
     margin-right: 0;
     .multi-sports-background {
       background-size: contain;
-      height: 10rem;
+      height: 11rem;
       margin-top: 2.5rem;
       .title {
         font-size: 2.2rem;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 3rem;
       }
     }
     .infos-and-testimonial {
@@ -252,8 +709,8 @@
           width: 70%;
         }
         .multi-sports-carousel{
-          width: 85%;
-          margin-left: 0;
+          width: 80%;
+          margin-left: 1rem;
           margin-bottom: 3rem;
           .multisports-slideshow img {
             height: 16rem;
@@ -298,7 +755,7 @@
     margin-top: 12rem;
     .school-services-background {
       background-size: cover;
-      height: 10rem;
+      height: 12rem;
       .title {
         font-size: 2.2rem;
         margin: auto;
@@ -343,6 +800,7 @@
     }
     .school-services-carousel {
       width: 100%;
+      margin-left: 1rem;
       .school-carousel {
         margin: auto;
         width: 90%;
@@ -387,7 +845,7 @@
     }
     .hero .change .container .title{
       font-size: 2.2rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     margin-top: 12rem;
     .whatson-info{
@@ -436,7 +894,7 @@
         .container {
           h1{
             font-size: 2rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
           }
         }
       }
@@ -808,14 +1266,15 @@
     }
     .school-services-carousel {
       width: 100%;
+      margin-left: 0;
       .school-carousel {
         margin: auto;
-        width: 90%;
+        width: 100%;
         .school-slideshow {
           width: 100%;
           height: 15rem;
           img{
-            height: 18rem;
+            height: 15rem;
             width: 100%;
           }
         }
@@ -936,7 +1395,7 @@
     }
     margin-top: 12rem;
     .whatson-info{
-      margin: auto;
+      margin-left: 0.75rem;
       .whatson-event{
         margin-right: 22.5%;
         figure{
@@ -1074,6 +1533,7 @@
       line-height: 1.5;
     }
     .container .privacy-statements .p-statements {
+      margin-left: -1.5rem;
       p {
         font-size: 0.8rem;
         line-height: 1.5;

@@ -12,13 +12,15 @@
 
 body {
   background-color: #fafafa;
-  height: 100vh;
+  height: auto;
   width: auto;
 }
 
 // ! HOME PAGE
 .home{
   margin-top: 230px;
+  margin-right: 0;
+  width: 100%;
   // width: 100%;
   .home-section{
     .carousel-wrapper {
@@ -395,7 +397,8 @@ body {
 //! SCHOOL SERVICES
 .school-services{
   margin-top: 218px;
-  // width: 100%;
+  width: 100%;
+  margin-right: 0;
   .school-services-carousel{
     width: 50em;
     padding-bottom: 50px;
@@ -488,6 +491,8 @@ body {
 }
 .whatson{
   margin-top: 218px;
+  margin-right: 0;
+  width: auto;
   .whatson-info{
     display: flex;
     justify-content: center;
@@ -519,6 +524,8 @@ body {
 // ! MULTISPORTS
 .multisports{
   margin-top: 218px;
+  width: 100%;
+  margin-right: 0;
   .infos-and-testimonial{
     margin: 60px 30px 0 30px;
     }
