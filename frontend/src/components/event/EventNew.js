@@ -54,7 +54,6 @@ class EventNew extends React.Component {
 
 
   render() {
-    console.log(this.state.fileInput)
     return (
       <div className="event-new">
         <section className="section">

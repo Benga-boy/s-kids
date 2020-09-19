@@ -84,7 +84,7 @@ class WhatsOn extends React.Component {
                   <p>{date} </p>
                   <h3 className="title"><strong>TIME</strong></h3>
                   {/* <p>{event.time} </p> */}
-                  {event.time > 12 ? <p>{event.time} PM</p> : <p>{event.time} AM </p>}
+                  {parseFloat(event.time) >= 12 ? <p>{event.time} PM</p> : <p>{event.time} AM </p>}
                 </div>
               </div>
               <div className="column">

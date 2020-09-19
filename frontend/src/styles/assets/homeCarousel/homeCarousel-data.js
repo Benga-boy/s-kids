@@ -27,5 +27,5 @@ export const rene = require('../others/rene.jpeg')
 export const ola = require('../others/ola.jpeg')
 export const oneTwoOne = require('../homeCarousel/image1.jpeg')
 export const multisportPic = require('../homeCarousel/multisports-background.jpeg')
-export const trial = require('../homeCarousel/try.jpeg')
+
 

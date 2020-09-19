@@ -1,5 +1,5 @@
 const Event = require('../models/event')
-const { notFound, unauthorized } = require('../lib/errorMessages')
+const { notFound } = require('../lib/errorMessages')
 const { cloudinary } = require('../utils/cloudinary')
 
 
@@ -94,7 +94,6 @@ async function eventDelete(req, res, next) {
   try {
     const eventToDelete = await Event.findById(eventId)
     if (!eventToDelete) throw new Error(notFound)
-    if (!eventToDelete.user.equals(req.currentUser._id)) throw new Error(unauthorized)
     await eventToDelete.remove()
     res.sendStatus(204)
   } catch (err) {

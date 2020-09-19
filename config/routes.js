@@ -6,7 +6,7 @@ const secureRoute = require('../lib/secureRoute')
 
 router.route('/events')
   .get(event.index)
-  .post(event.create)
+  .post(secureRoute, event.create)
 
 router.route('/events/:id')
   .get(event.show)

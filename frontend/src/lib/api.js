@@ -19,8 +19,8 @@ export const getSingleEvent = (id) => {
 }
 
 // * Function to create an event
-export const createEvent = (file, formData) => {
-  return axios.post(`${skUrl}/events`, file, formData, withHeaders())
+export const createEvent = (formData) => {
+  return axios.post(`${skUrl}/events`, formData, withHeaders())
 }
 
 
