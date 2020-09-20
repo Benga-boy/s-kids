@@ -259,6 +259,11 @@ EXAMPLE - * Excuse the screenshots please
 * Contact form - Built using Bulma and the action uses "https://formspree.io/" to deliver the message to the clients inbox. I chose this to help the client save on costs which is a key factor for them
 * Subscription form - Designed and served directly from Sendgrid, which collates the Subscribers email and info then stores it on the clients contact list. Making it easy to send out their Newsletters or marketing contents to their subscribers.
 
+## POST COMPLETION - 
+I deployed the site to heroku then shared it with the client, friends and family to get feedback. The feedback was very positive and helpful.
+
+A lot of the feedback centred around the contents, such as grammar and wanting more details about their services. I shared the feedback with the client, which they agreed with and worked on before the final depoloyment.
+
 
 ### CHALLENGES - 
 * Having to stop halfway through the project for about 6 weeks to wait on the client to deliver the content
