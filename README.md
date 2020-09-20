@@ -262,7 +262,29 @@ EXAMPLE - * Excuse the screenshots please
 ## POST COMPLETION - 
 I deployed the site to heroku then shared it with the client, friends and family to get feedback. The feedback was very positive and helpful.
 
-A lot of the feedback centred around the contents, such as grammar and wanting more details about their services. I shared the feedback with the client, which they agreed with and worked on before the final depoloyment.
+Including - 
+* The page wasnt scrolling to the top when they nagivated to a different page.I was able to solve this with the following code - 
+```
+import {useEffect} from 'react'
+import {useLocation} from 'react-router-dom'
+
+export default function ScrollToTop() {
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+```
+* The email and phone number on the navbar especially in mobile should open the users default email or telephone client with those details prepopulated. 
+
+* The feedback also included wanting more details about the services that the client provides, which I fedback to them and they agreed with. They worked a bit more on this and also agreed to keep working on this in the future.
+
+* Grammatical errors which I also fedback to client to change. 
+
+* More pictured that truly reflected the services they offer. They agreed to provide more of this in the near future as they need prior permission etc to take pictures as their sessions involve children.
 
 
 ### CHALLENGES - 
