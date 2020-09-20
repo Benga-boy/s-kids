@@ -48,17 +48,221 @@ I came up with a design on a wireframe (please see below) which the client was v
 Both of the above led me to complete a 1 day bootcamp on UX Design with General Assembly which I enjoyed.
 
 * Wireframe - 
+HOMEPAGE
 ![my screenshot](readme-files/home.png)
+
+ABOUT US
 ![my screenshot](readme-files/about.png)
+
+MULTISPORTS / SCHOOL SERVICES
 ![my screenshot](readme-files/Multisports.png)
+
+WHATS ON!
 ![my screenshot](readme-files/whatson.png)
+
+CONTACT US
 ![my screenshot](readme-files/contact.png)
 
 ## PROJECT START - 
-I started off the project with the help of a colleague from my course at GA. 
+I started off the project by employing a colleague from my course at GA to help speed up my process as the client wanted to work on a 2 weeks timeframe initially. 
 
-### Backend - 
-We started off the with the backend using MongoDB and Atlas to store data over the first two days.
-* Creating a user to serve as admin when creating the creating or updating an event
-* Creating the event model and functions to add, update and delete an event
+### Backend - MongoDB, Express Node and Atlas (To store the data)
+
+We started off the with the backend over the first two days.
+
+* Creating a user to serve as admin when creating the creating or updating an event. Including a function to login that user
+
+### USER MODEL AND LOGIN FUNCTION
+```const userSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true, maxlength: 50 },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true }
+})
+
+userSchema
+  .set('toJSON', {
+    virtuals: true,
+    transform(doc, json) {
+      delete json.password
+      return json
+    }
+  })
+
+userSchema.methods.validatePassword = function(password) {
+  return bcrypt.compareSync(password, this.password)
+}
+
+userSchema
+  .virtual('passwordConfirmation')
+  .set(function(passwordConfirmation) {
+    this._passwordConfirmation = passwordConfirmation
+  })
+
+userSchema
+  .pre('validate', function(next) {
+    if (this.isModified('password') && this._passwordConfirmation !== this.password) {
+      this.invalidate('passwordConfirmation', 'does not match')
+    }
+    next()
+  })
+
+userSchema
+  .pre('save', function(next){
+    if (this.isModified('password')) {
+      this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync(8))
+    }
+    next()
+  })
+
+userSchema.plugin(require('mongoose-unique-validator'))
+```
+
+```async function login (req, res) {
+  try {
+    // * find a user by their email
+    const user = await User.findOne({ email: req.body.email })
+    // * if they dont exist or password doesnt match throw an error
+    if (!user || !user.validatePassword(req.body.password)) {
+      throw new Error()
+    }
+    //* if above passes, make the user a token
+    const token = jwt.sign({ sub: user._id }, secret, { expiresIn: '7 days' })
+    // * send the user a token in response
+    res.status(202).json({
+      message: `Sup ${user.username}`, 
+      token
+    })
+  } catch (err){
+    res.status(401).json({ message: 'unauthorized' })
+  }
+}
+```
+
+
+* Creating the event model and functions to add, update and delete an event.
+
+### EVENT MODEL AND EVENT CREATING FUNCTION
+```
+const eventSchema = new mongoose.Schema({
+  title: { type: String, required: true, trim: true },
+  description: { type: String, trim: true },
+  date: { type: Date, required: true },
+  time: { type: String },
+  longitude: { type: String },
+  latitude: { type: String },
+  image: { type: String, required: true }
+}, {
+  timestamps: true
+})
+
+// * Function to create an event!!!!
+async function eventCreate(req, res, next) {
+  try {
+    // Upload the file to cloudinary!
+    const uploadResponse = await cloudinary.uploader.upload(req.body.image, {
+      upload_preset: 'sporting-kids'
+    })
+
+    // Create instance of new event object
+    const newEvent = {
+      title: req.body.title,
+      description: req.body.description,
+      date: req.body.date,
+      time: req.body.time,
+      image: uploadResponse.url,
+      latitude: req.body.latitude,
+      longitude: req.body.longitude
+    }
+
+    // Create the event
+    const event = await Event.create(newEvent)
+    await event.save()
+    res.json(event)
+
+    console.log(req.body.data)
+  } catch (err) {
+    next(err)
+  }
+}
+
+```
+The function takes in the Base64 format image from the request body, sends it the cloduinary and then response url from cloudinary is stored on the image, which serves as the source for the image on the frontend.
+
+* Image upload using Multer, which I later updated to use cloudinary due to unforeseen circumstances.
+* I initially built a model and functions to collate subscribers emails. Only to find out that Sendgrid provide a service that does this automatically, after doing further research, which is what now serves the "Join our newsletter" form on the contact us page
+* I tested all of the above to ensure it was fully functional using postman before moving on to the frontend.
+
+### Frontend - React, SASS & Bulma
+This is where most of the resources and time went. 
+
+We made a quick start to the frontend with the help of the wireframe quicky building a layout of the homepage, about page and contact page using Lorem Ipsum and dummy pictures. 
+
+This was meant to take a week or two to complete. However, the client wasnt able to deliver their contents in time as they had a busy schedule during school holidays so there was 6 weeks stop. My colleague also decided to move on to work on other things, leaving me with some halfway written codes and a number of uncompleted tasks, such as the image upload on the create event form and a static map which didnt move much. 
+
+I ended up completing the project on my own including the styling and making it responsive. 
+
+### HOMEPAGE - 
+* Video Player - This was initially built using the react-player package. However, as time went on, I wasnt very happy with the CSS and controls that came with the package so I built my own using the HTML <video> tag. 
+* Image Slideshows - Built with react slick. The package game me a lot of control over the styling of the images and containers which I quite liked.
+* Divs containing their services and modals were built using Bulma and the animations with animate css.
+
+### ABOUT - 
+* Coaches card - Built using Bulma and animate css for the modal entrance.
+
+### MULTISPORTS/SCHOOL SERVICES - 
+* Testimonials - Built using Bulma message card
+* Image Slideshows - Built with react slick
+
+### WHATS ON! - 
+* Dynamic page that serves the clients event when they have one on. 
+* Map - Built using React Map GL and Mapbox
+```
+class Map extends React.Component {
+  state = {
+    viewport: {
+      longitude: this.props.longitude,
+      latitude: this.props.latitude,
+      height: '280px',
+      width: '320px',
+      zoom: 13
+    }
+  }
+  render() {
+    const {viewport} = this.state
+    return (
+          <MapGl
+      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+      {...viewport}
+      mapStyle='mapbox://styles/mapbox/streets-v11'
+      onViewportChange={(viewport) => {this.setState({viewport})}}
+    >
+      <Marker
+        latitude={viewport.latitude}
+        longitude={viewport.longitude}
+      >
+        <span role="img" aria-label="marker" style={{ fontSize: '33px' }}>📍</span>
+      </Marker>
+    </MapGl>
+    )
+  }
+}
+```
+EXAMPLE - * Excuse the screenshots please
+
+![my screenshot](readme-files/whatson1.jpeg)
+
+![my screenshot](readme-files/whatson2.jpeg)
+
+### CONTACT - 
+* Contact form - Built using Bulma and the action uses "https://formspree.io/" to deliver the message to the clients inbox. I chose this to help the client save on costs which is a key factor for them
+* Subscription form - Designed and served directly from Sendgrid, which collates the Subscribers email and info then stores it on the clients contact list. Making it easy to send out their Newsletters or marketing contents to their subscribers.
+
+
+### CHALLENGES - 
+
+### WINS - 
+
+## SUMMARY - 
+
+
 
