@@ -45,7 +45,7 @@ I had a sit down with the client to better understand who their clients are, mos
 I came up with a design on a wireframe (please see below) which the client was very happy with. I took aspects of their previous website and tried to improve on it where it could, such as the 6 divs on the home page which just served as routers to either the "Childcare" or "Sporting kids" page that the client could have just clicked on in the navbar. My plan was to turn them into modals that held information about that particular service. 
 
 ### Future Benga here - 
-Both of the above led me to complete a 1 day bootcamp on UX Design with General Assembly which I enjoyed.
+Both of the above led me to complete a one day bootcamp on UX Design with General Assembly which I enjoyed.
 
 * Wireframe - 
 HOMEPAGE
@@ -73,7 +73,8 @@ We started off the with the backend over the first two days.
 * Creating a user to serve as admin when creating the creating or updating an event. Including a function to login that user
 
 ### USER MODEL AND LOGIN FUNCTION
-```const userSchema = new mongoose.Schema({
+```
+const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true, maxlength: 50 },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }
@@ -117,7 +118,8 @@ userSchema
 userSchema.plugin(require('mongoose-unique-validator'))
 ```
 
-```async function login (req, res) {
+```
+async function login (req, res) {
   try {
     // * find a user by their email
     const user = await User.findOne({ email: req.body.email })
@@ -259,10 +261,22 @@ EXAMPLE - * Excuse the screenshots please
 
 
 ### CHALLENGES - 
+* Having to stop halfway through the project for about 6 weeks to wait on the client to deliver the content
+* Losing an extra resource and having to pick up where they left off. Tough as we have different coding styles but got through it and relished the challenge
+* Finding the best avenues to save costs where I could 
+* Restarting the project after a long wait because I had moved on to other personal side projects.
+* Taking up more roles than just a "Developer", such as Designer and Project manager. All of which I enjoyed and even took one step further as mentioned above by taking a one day UX design bootcamp 
 
 ### WINS - 
+* Completing my first real world project from start to finish since finishing my course with GA. Big achievement for me
+* Defeating imposter syndrome early on and at every stage it came about
+* Client feedback! The fact that they are very happy with the final product
+* Never giving up whenever I was faced with difficult challenges. This was never an option and a good example is, at the restart I had to understand code left behind by my colleague and build further on it or even rewrite sometimes. 
+* Doing a lot of research and making good use of external sources such as Stackoverflow, YouTube and Medium. This helped a lot with my confidence as I had to be very self reliant now that I dont have the help of instructors etc as was during my course.
+* Confidence Booster
+* Teamwork
 
 ## SUMMARY - 
-
+As mentioned above. I loved every aspect of the project from start to finish as it gave me a good feel of what to expect in the real world as a Developer. I came across many challenges on the way, which I tackled heads on at every moment. The fact that the client is also very happy with the overall product is a sign of a huge achievement on my part and I look forward to even greater accomplishments.
 
 
