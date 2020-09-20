@@ -12,7 +12,7 @@ Although majority of the website is static. They also wanted a dynamic events pa
 
 The clients, Sporting Kids wanted an improvement on their website at a reasonable price so they approached me as the Directors are close friends. 
 
-### Current/Now previous website 
+### Previous website 
 
 ![my screenshot](readme-files/oldHomepage.png)
 
