@@ -162,9 +162,13 @@
       width: 14rem;
       margin-bottom: 2.2rem;
     }
-    section div p {
+    section div p,
+    section div ul li {
       font-size: 1.1rem;
       width: 95%;
+    }
+    section div h4 {
+      font-size: 1.4rem;
     }
   }
 }
@@ -673,10 +677,14 @@
         width: 15rem;
         margin-bottom: 3rem;
       }
-      section div p {
+      section div p,
+      section div ul li {
         font-size: 1rem;
         width: 100%;
         line-height: 1.5;
+      }
+      section div h4 {
+        font-size: 1.2rem;
       }
     }
   }
@@ -1217,10 +1225,14 @@
       section figure {
         width: 12rem;
       }
-      section div p {
+      section div p,
+      section div ul li{
         font-size: 0.9rem;
         width: 100%;
         line-height: 1.5;
+      }
+      section div h4 {
+        font-size: 1rem;
       }
     }
   }

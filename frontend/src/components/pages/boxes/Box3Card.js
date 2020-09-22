@@ -35,7 +35,7 @@ class BoxThreeCard extends React.Component {
               </header>
               <section className="modal-card-body">
                 <p>
-              Perfect for a group of siblings or friends! These fun sessions aim to improve skills, confidence and overall performance in a chosen sport or multi sports.
+                We host a range of events from half term camps, sport programmes and fundays. We also work alongside organisations and charities to help create a fun and safe environment.
                 </p>
               </section>
               <footer className="modal-card-foot">

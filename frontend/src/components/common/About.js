@@ -143,6 +143,16 @@ class About extends React.Component {
                   <p>
                   My vision for the company is being able to "provide a chance for children to experience new sports, learn new skills, be active and most importantly, have fun!"
                   </p>
+                  <h4>Qualifications:</h4>
+                  <ul>
+                    <li>Level 1 award in developing community activities for youth at risk</li>
+                    <li>Level 1 award  in equality, diversity and inclusion</li>
+                    <li>Intermediate primary level - gymnastics</li>
+                    <li>Uefa B football  licence coach</li>
+                    <li>PTR Tennis qualified</li>
+                    <li>First aid</li>
+                    <li>Safeguarding</li>
+                  </ul>
                 </div>
               </section>
               <footer className="modal-card-foot">
