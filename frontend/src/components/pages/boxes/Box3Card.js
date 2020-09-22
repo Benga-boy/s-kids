@@ -20,7 +20,7 @@ class BoxThreeCard extends React.Component {
 
         <article onClick={toggleModal} className="box-three message is-dark" id="box3">
           <div className="small-groups message-body">
-            <p><strong>SMALL GROUPS</strong></p>
+            <p><strong>EVENTS</strong></p>
           </div>
         </article>
 
@@ -30,7 +30,7 @@ class BoxThreeCard extends React.Component {
           <div className="animate__animated animate__backInDown">
             <div className="modal-card">
               <header className="modal-card-head">
-                <p className="modal-card-title">SMALL GROUPS</p>
+                <p className="modal-card-title">EVENTS</p>
                 <button className="delete" aria-label="close" onClick={toggleModal}></button>
               </header>
               <section className="modal-card-body">

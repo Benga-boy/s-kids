@@ -57,9 +57,7 @@ const SchoolServices = () => {
                 </p>
                 <h3>PE Lessons / PPA Cover</h3>
                 <p>
-                  We know how vital PPA time is and how expensive and time-consuming managing external cover
-                  can be. This is considered when tailoring our PPA packages so we can offer affordable cover and
-                  make valuable use of your Primary PE and Sport Premium funding budgets.<br /><br />
+                We know how vital PPA time is and how expensive and time-consuming managing external cover can be. This is considered when tailoring our PPA packages so we can offer affordable cover and make valuable use of your PE and Sport Premium funding budget.<br /><br />
                   By choosing Sporting Kids for your PPA cover and PE lessons, you can rest assured that we will
                   provide your school with the following benefits:
                 </p>

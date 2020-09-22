@@ -20,7 +20,7 @@ class BoxFourCard extends React.Component {
 
         <article onClick={toggleModal} className="box-four message is-success" id="box4">
           <div className="one-to-one message-body">
-            <p><strong>ONE TO ONE <br /> COACHING</strong></p>
+            <p><strong>ONE TO ONE & SMALL GROUP</strong></p>
           </div>
         </article>
 
@@ -29,12 +29,12 @@ class BoxFourCard extends React.Component {
           <div className="animate__animated animate__backInUp">
             <div className="modal-card">
               <header className="modal-card-head">
-                <p className="modal-card-title">ONE-TO-ONE SPORTS PERFORMANCE COACHING</p>
+                <p className="modal-card-title">ONE-TO-ONE & SMALL GROUP</p>
                 <button className="delete" aria-label="close" onClick={toggleModal}></button>
               </header>
               <section className="modal-card-body">
                 <p>
-                  One to one sports coaching with Sporting Kids provide personalised sessions which aim to improve skills, confidence and overall performance in a chosen sport.
+                Perfect for an individual, group of siblings or friends! These fun sessions aim to improve skills, confidence and overall performance in a chosen sport or multi sports.
                 </p>
               </section>
               <footer className="modal-card-foot">

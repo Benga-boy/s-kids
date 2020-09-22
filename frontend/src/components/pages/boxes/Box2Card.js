@@ -20,7 +20,7 @@ class BoxTwoCard extends React.Component {
 
         <article onClick={toggleModal} className="message is-link" id="box2">
           <div className="sports-coaching message-body">
-            <p><strong>SPORTS COACHING</strong></p>
+            <p><strong>SCHOOL SERVICES</strong></p>
           </div>
         </article>
 
@@ -30,12 +30,12 @@ class BoxTwoCard extends React.Component {
           <div className="animate__animated animate__backInDown">
             <div className="modal-card">
               <header className="modal-card-head">
-                <p className="modal-card-title">SPORTS COACHING</p>
+                <p className="modal-card-title">SCHOOL SERVICES</p>
                 <button className="delete" aria-label="close" onClick={toggleModal}></button>
               </header>
               <section className="modal-card-body">
                 <p>
-              We provide multisport sessions for children aged 4-11, our aim is for young people to be given high quality opportunities to access sport in a safe, fun and challenging environment.
+                We provide schools with a range of sports throughout the day. Our tailor made packages are suited to meet your schools budget and needs. We have experience of coaching in primary and secondary mainstream and SEN schools, as well as pupil referral units.
                 </p>
               </section>
               <footer className="modal-card-foot">

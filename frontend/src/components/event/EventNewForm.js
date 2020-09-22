@@ -57,7 +57,7 @@ const EventNewForm = ({ formData, handleImage, handleChange, handleSubmit}) => (
               name="date"
               onChange={handleChange}
               value={formData.date}
-              type="date"
+              type="text"
             />
           </div>
         </div>

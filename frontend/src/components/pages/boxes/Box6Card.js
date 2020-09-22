@@ -21,7 +21,7 @@ class BoxSixCard extends React.Component {
 
         <article onClick={toggleModal} className="box-six message is-primary" id="box6">
           <div className="breakfast-club message-body">
-            <p><strong>MULTI-SPORTS CAMPS</strong></p> 
+            <p><strong>HALF-TERM CAMPS</strong></p> 
           </div>
         </article>
 
@@ -31,12 +31,14 @@ class BoxSixCard extends React.Component {
           <div className="animate__animated animate__backInUp">
             <div className="modal-card">
               <header className="modal-card-head">
-                <p className="modal-card-title">MULTI-SPORTS CAMPS</p>
+                <p className="modal-card-title">HALF-TERM CAMPS</p>
                 <button className="delete" aria-label="close" onClick={toggleModal}></button>
               </header>
               <section className="modal-card-body">
                 <p>
-              Normally delivered from 7:30am - 8:50am. Pupils begin the day with Physical Activity, helping to stimulate them ready for the school day ahead. We also offer board games, puzzles a place to read and write in our ‘relaxation areas’.
+                We usually run from 9am-3pm during the school holidays with an optional early drop off and late pick up an hour either side.
+                <br/>
+                We offer a variety of activities and sports throughout the day with medals and certificates given out at the end of the week.
                 </p>
               </section>
               <footer className="modal-card-foot">

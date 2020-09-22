@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Map from '../event/Map'
-import moment from 'moment'
+// import moment from 'moment'
 
 
 import { getEvent, deleteEvent } from '../../lib/api'
@@ -54,7 +54,7 @@ class WhatsOn extends React.Component {
 
 
     // Convert date using moment
-    const date = moment(event.date).format('LL')
+    // const date = moment(event.date).format('LL')
     return (
       <div className="whatson">
         <section className="hero is-link has-text-centered">
@@ -81,7 +81,7 @@ class WhatsOn extends React.Component {
                   <h3 className="title"><strong>DETAILS</strong></h3>
                   <p>{event.description} </p>
                   <h3 className="title"><strong>DATE</strong></h3>
-                  <p>{date} </p>
+                  <p>{event.date} </p>
                   <h3 className="title"><strong>TIME</strong></h3>
                   {/* <p>{event.time} </p> */}
                   {parseFloat(event.time) >= 12 ? <p>{event.time} PM</p> : <p>{event.time} AM </p>}

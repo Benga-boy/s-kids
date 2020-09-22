@@ -21,7 +21,7 @@ class BoxOneCard extends React.Component {
 
         <article onClick={toggleModal} className="box-one message is-warning" id="box1">
           <div className="after-school message-body">
-            <p><strong>AFTER SCHOOL</strong></p>
+            <p><strong>AFTER SCHOOL MULTI-SPORTS CLUB</strong></p>
           </div>
         </article>
 
@@ -31,12 +31,12 @@ class BoxOneCard extends React.Component {
           <div className="animate__animated animate__backInDown">
             <div className="modal-card">
               <header className="modal-card-head">
-                <p className="modal-card-title">AFTER SCHOOL</p>
+                <p className="modal-card-title">AFTER SCHOOL MULTI-SPORTS CLUB</p>
                 <button className="delete" onClick={toggleModal} aria-label="close"></button>
               </header>
               <section className="modal-card-body">
                 <p>
-                  After school club - normally runs for an hour 3.30pm until 4.30pm. These clubs give pupils the chance to further develop their skills in an activity outside school hours. All pupils participating in After School Clubs receive a medal, and trophies are given out in the final week’s presentation.
+                Normally runs for an hour 4:30pm until 5.30pm. These clubs give children and young people the chance to further develop their skills in an activity outside school hours. All pupils participating in after school clubs receive a medal and trophies are given out in the final week’s presentation.
                 </p>
               </section>
               <footer className="modal-card-foot">

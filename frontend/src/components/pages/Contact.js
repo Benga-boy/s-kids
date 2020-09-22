@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="hero-body">
           <div className="container">
             <h1 className="title">
-              WE WILL LOVE TO HEAR FROM YOU!
+              WE WOULD LOVE TO HEAR FROM YOU!
             </h1>
           </div>
         </div>

@@ -85,7 +85,7 @@ const Multisports = () => {
                   </div>
                   <div className="message-body">
                     <em>
-                      <strong>"What a fantastic team! The kids had so much fun and you made taylens day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
+                      <strong>"What a fantastic team! The kids had so much fun and you made Taylen's day. You have the most patience to look after 25 eight year olds! I take my hat off to you! Thank you again for the best party!"</strong></em>
                   </div>
                 </article>
               </div>
