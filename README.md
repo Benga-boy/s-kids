@@ -10,7 +10,7 @@ Although majority of the website is static. They also wanted a dynamic events pa
 
 ## AIM - 
 
-The clients, Sporting Kids wanted an improvement on their website at a reasonable price so they approached me as the Directors are close friends. 
+The client, Sporting Kids wanted an improvement on their website at a reasonable price so they approached me as the Directors are close friends. 
 
 ### Previous website 
 
@@ -38,11 +38,11 @@ The clients, Sporting Kids wanted an improvement on their website at a reasonabl
 
 ## Research and design phase - 
 
-I had a sit down with the client to better understand who their clients are, mostly Schools and Parents. This automatically gets me thinking that a  responsive website is key, especially for parents who are constantly on the move and will probably be accessing the site via their phones. 
+I had a sit-down with the client to better understand who their clients are, mostly Schools and Parents. This automatically got me thinking that a  responsive website is key, especially for parents who are constantly on the move and will probably be accessing the site via their phones. 
 
 ### Design - 
 
-I came up with a design on a wireframe (please see below) which the client was very happy with. I took aspects of their previous website and tried to improve on it where it could, such as the 6 divs on the home page which just served as routers to either the "Childcare" or "Sporting kids" page that the client could have just clicked on in the navbar. My plan was to turn them into modals that held information about that particular service. 
+I came up with a design on a wireframe (please see below) which the client was very happy with. I took aspects of their previous website and tried to improve them where I could, such as the 6 divs on the home page, which just served as routers to either the "Childcare" or "Sporting kids" page where the client could have just clicked on in the navbar. My plan was to turn them into modals that held information about that particular service. 
 
 ### Future Benga here - 
 Both of the above led me to complete a one day bootcamp on UX Design with General Assembly which I enjoyed.
@@ -263,7 +263,7 @@ EXAMPLE - * Excuse the screenshots please
 I deployed the site to heroku then shared it with the client, friends and family to get feedback. The feedback was very positive and helpful.
 
 Including - 
-* The page wasnt scrolling to the top when they nagivated to a different page.I was able to solve this with the following code - 
+* The page wasn't scrolling to the top when they nagivated to a different page. I was able to solve this with the following code - 
 ```
 import {useEffect} from 'react'
 import {useLocation} from 'react-router-dom'
@@ -278,13 +278,13 @@ export default function ScrollToTop() {
   return null
 }
 ```
-* The email and phone number on the navbar especially in mobile should open the users default email or telephone client with those details prepopulated. 
+* The email and phone number on the navbar, especially in mobile, should open the users default email or telephone client with those details prepopulated. 
 
-* The feedback also included wanting more details about the services that the client provides, which I fedback to them and they agreed with. They worked a bit more on this and also agreed to keep working on this in the future.
+* The feedback also included wanting more details about the services that the client provides, which I feedbacked to them and they agreed with. They worked a bit more on this and also agreed to keep working on this in the future.
 
-* Grammatical errors which I also fedback to client to change. 
+* Grammatical errors which I also feedbacked to client to change. 
 
-* More pictured that truly reflected the services they offer. They agreed to provide more of this in the near future as they need prior permission etc to take pictures as their sessions involve children.
+* More pictured that truly reflected the services they offer. They agreed to provide more of this in the near future as they need prior permission etc. to take pictures as their sessions involve children.
 
 
 ### CHALLENGES - 
@@ -299,7 +299,7 @@ export default function ScrollToTop() {
 * Defeating imposter syndrome early on and at every stage it came about
 * Client feedback! The fact that they are very happy with the final product
 * Never giving up whenever I was faced with difficult challenges. This was never an option and a good example is, at the restart I had to understand code left behind by my colleague and build further on it or even rewrite sometimes. 
-* Doing a lot of research and making good use of external sources such as Stackoverflow, YouTube and Medium. This helped a lot with my confidence as I had to be very self reliant now that I dont have the help of instructors etc as was during my course.
+* Doing a lot of research and making good use of external sources such as Stackoverflow, YouTube and Medium. This helped a lot with my confidence as I had to be very self-reliant now that I don't have the help of instructors etc. as it was during my course.
 * Confidence Booster
 * Teamwork
 
