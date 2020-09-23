@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
               PRIVACY POLICY
             </h1>
             <h3>
-              <em>This privacy policy sets out how we use and protect any information you provide us when you visit our website, fill out forms with your details and submit your data to us in any other form</em>
+              <em>This privacy policy sets out how we use and protect any information you provide us when you visit our website, fill out forms with your details and submit your data to us in any other form.</em>
             </h3>
           </div>
         </div>

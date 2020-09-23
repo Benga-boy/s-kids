@@ -1,4 +1,4 @@
-
+export const logo = require('../logos/logo.png')
 
 export const homeCarousel = [
   {name: 'image0', value: require('../homeCarousel/437DCD53.jpeg')},
