@@ -1,5 +1,5 @@
 // ? MAX WIDTH 1200
-@media (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .foot{
     height: 14.5rem;
     .footer-container{
@@ -10,7 +10,7 @@
 
 
 // ? MAX WIDTH 1023
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   // ! FOOTER
 // * FOOTER 
 .foot {
@@ -23,8 +23,8 @@
       margin-top: 0.7rem;
     }
     div .skcopyright strong {
-      font-size: 1.2em;
-      margin-left: 0;
+      font-size: 1em;
+      margin-left: 1.5rem;
       margin-top: 10rem;
     }
     .policy {
@@ -77,10 +77,10 @@
   }
   .home-section{
     .carousel-wrapper {
-      width: 100%;
+      width: auto;
       .home-slideshow {
         height: 13rem;
-        width: 100%;
+        width: auto;
         img {
           height: 13.5rem;
           width: 100%;
@@ -470,7 +470,7 @@
 
 
 // ? MAX WIDTH 767
-@media (max-width: 767px) {
+@media (min-width: 668px) and (max-width: 767px) and (orientation: portrait) {
   // ! FOOTER
   .foot {
     height: 11.5rem;
@@ -1029,7 +1029,7 @@
 
 
 // ? MAX WITH 480PX
-@media (max-width: 480px) {
+@media (min-width: 360px) and (max-width: 667px) and (orientation: portrait) {
   *, body{
     margin: 0;
   }
