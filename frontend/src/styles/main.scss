@@ -24,10 +24,10 @@ body {
   // width: 100%;
   .home-section{
     .carousel-wrapper {
-      width: 100%;
+      // width: 100%;
       .home-slideshow {
         height: 310px;
-        width: 100%;
+        // width: 100%;
         img {
           height: 320px;
           width: 100%;
@@ -492,6 +492,7 @@ body {
 .whatson{
   margin-top: 218px;
   margin-right: 0;
+  margin-left: 0;
   width: auto;
   .whatson-info{
     display: flex;

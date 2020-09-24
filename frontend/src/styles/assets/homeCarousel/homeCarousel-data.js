@@ -12,11 +12,12 @@ export const schoolCarousel = [
   {name: 'image77', value: require('../homeCarousel/59260D6.jpeg')},
   {name: 'image97', value: require('../homeCarousel/20200911_194510.jpeg')},
   {name: 'image97', value: require('../homeCarousel/20200911_194348.jpeg')}
+  // {name: 'image1000', value: require('../homeCarousel/image1000.jpeg')}
 ]
 
 
 export const multisportCarousel = [
-  {name: 'image776', value: require('../homeCarousel/homepic1.jpeg')},
+  {name: 'image776', value: require('../homeCarousel/image1000.jpeg')},
   {name: 'image277', value: require('../homeCarousel/WhatsApp Image 2020-09-14 at 16.33.20.jpeg')},
   {name: 'image79', value: require('../homeCarousel/image1.jpeg')},
   {name: 'image122', value: require('../homeCarousel/WhatsApp Image 2020-09-15 at 13.55.26.jpeg')}
