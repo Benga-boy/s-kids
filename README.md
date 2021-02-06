@@ -1,6 +1,8 @@
 # PROJECT FOR SPORTING KIDS - 
 https://www.sportingkids.co.uk/
 
+### Website updated using bootstrap framework
+
 ## DURATION - 
 3 weeks + 
 
